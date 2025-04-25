@@ -1,0 +1,98 @@
+.column-layout {
+    margin-top: 26px;
+}
+
+.column-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 42px;
+    margin-bottom: 19px;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.column-layout .text-card {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    text-align: left;
+    align-items: flex-start;
+}
+
+.column-layout .text-card-heading {
+    font-size: 42px;
+}
+
+/* Styles for large desktop */
+@media (min-width: 1439px) {  
+    .column-layout {
+        margin-top: calc(1.81vw * var(--scale));
+    }
+
+    .column-layout-grid {
+        gap: calc(2.92vw * var(--scale));
+        margin-bottom: calc(1.32vw * var(--scale));
+        padding-left: 2.92vw;
+        padding-right: 2.92vw;
+    }
+
+    .column-layout .text-card {
+        padding-top: calc(2.64vw * var(--scale));
+        padding-bottom: calc(2.64vw * var(--scale));
+    }
+    
+    .column-layout .text-card-heading {
+        font-size: calc(2.92vw * var(--scale));
+    }
+}
+
+/* Styles for tablet */
+@media (max-width: 991px) { 
+    .column-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .left-column,
+    .center-column {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .column-layout .text-card {
+        text-align: center;
+        padding-top: 57px;
+        padding-bottom: 64px;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .column-layout .text-card-heading {
+        font-size: 48px;
+    }
+}
+
+/* Styles for mobile */
+@media (max-width: 479px) { 
+    .column-layout {
+        margin-top: 20px;
+    }
+
+    .left-column,
+    .center-column {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .column-layout .text-card {
+        padding-bottom: 57px;
+    }
+
+    .column-layout .text-card-heading {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,270 @@
+.demo-buttons-container {
+    display: flex;
+    gap: 17px;
+    position: fixed;
+    z-index: 200;
+    bottom: 36px;
+    right: 42px;
+}
+
+.demo-button {
+    border: 1px solid var(--text-color);
+    background-color: var(--background-color);
+    height: 48px;
+    min-height: 48px;
+    width: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 0px !important;
+}
+
+.demo-button:hover {
+    background-color: var(--text-color) !important;  
+    opacity: 1 !important;
+}
+
+.demo-button:hover svg path {
+    fill: var(--background-color) !important;
+}
+
+.demo-button-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    color: var(--text-color);
+}
+
+.settings-sidebar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 200;
+    transform: translateY(-50%) translateX(105%);
+    background-color: var(--background-color);
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    max-height: 70vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+.open-settings-sidebar {
+    transform: translateY(-50%) translateX(0%);
+}
+
+.settings-inner {
+    padding: 24px 24px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    overflow-y: scroll;
+    max-width: 230px;
+}
+
+.settings-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.settings-item small {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.settings-item input,
+.settings-select {
+    height: 28px;
+    padding: 2px 10px;
+    border-radius: 0px !important;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+}
+
+.settings-select,
+.settings-input {
+    background-color: var(--background-color);
+    font-family: var(--font1);
+    font-weight: 300;
+    height: 28px;
+    font-size: 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--text-color);
+}
+
+.settings-select option {
+    background-color: var(--background-color);
+    font-family: var(--font1);
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.settings-select:focus {
+    border: 1px solid var(--text-color);
+    outline: none;
+}
+
+.color-picker-wrapper {
+    position: relative;
+}
+
+.colorpicker-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 2;
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+}
+
+.colorpicker-overlay-text {
+    background-color: var(--text-color);
+}
+
+.settings-item label {
+    display: flex;
+}
+
+.buy-button-wrapper {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    white-space: nowrap;
+}
+
+.open-settings-sidebar-button {
+    background-color: var(--text-color);
+}
+
+.open-settings-sidebar-button svg path {
+    fill: var(--background-color);
+    stroke: var(--background-color);
+}
+
+.settings-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.settings-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Styles for large desktop */
+@media (min-width: 1439px) {  
+    .demo-buttons-container {
+        gap: calc(1.1vw * var(--scale));
+        bottom: calc(2.5vw * var(--scale));
+        right: 2.92vw;
+    }
+
+    .demo-button {
+        height: calc(3.33vw * var(--scale));
+        min-height: calc(3.33vw * var(--scale));
+        width: calc(3.33vw * var(--scale));
+        min-width: calc(3.33vw * var(--scale));
+    }
+    
+    .demo-button-inner {
+        width: calc(1.67vw * var(--scale));
+        min-width: calc(1.67vw * var(--scale));
+        height: calc(1.67vw * var(--scale));
+    }
+    
+    .settings-inner {
+        padding: calc(1.67vw * var(--scale)) calc(1.67vw * var(--scale)) calc(2.22vw * var(--scale)) calc(1.67vw * var(--scale));
+        gap: calc(1.11vw * var(--scale));
+        max-width: calc(16vw * var(--scale));
+    }
+    
+    .settings-item {
+        gap: calc(0.42vw * var(--scale));
+    }
+    
+    .settings-item small {
+        font-size: calc(1vw * var(--scale));
+    }
+    
+    .settings-item input,
+    .settings-select {
+        height: calc(1.8vw * var(--scale));
+        padding: calc(0.14vw * var(--scale)) calc(0.7vw * var(--scale));
+    }
+    
+    .settings-select,
+    .settings-input {
+        height: calc(1.94vw * var(--scale));
+        font-size: calc(1vw * var(--scale));
+    }
+    
+    .buy-button-wrapper {
+        margin-top: calc(0.56vw * var(--scale));
+    }
+    
+    .buy-button {
+        font-size: calc(1vw * var(--scale));
+        padding-top: calc(0.48vw * var(--scale));
+        padding-bottom: calc(0.48vw * var(--scale));
+    }
+
+    .settings-links {
+        gap: calc(0.35vw * var(--scale));
+    }
+}
+
+/* Styles for tablet */
+@media (max-width: 991px) { 
+    .demo-buttons-container {
+        bottom: 30px;
+        right: 30px;
+    } 
+}
+
+/* Styles for mobile */
+@media (max-width: 479px) { 
+    .demo-buttons-container {
+        gap: 10px;
+        bottom: 18px;
+        right: 18px;
+    }
+    
+    .demo-button-inner {
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+    }
+
+    .demo-button {
+        height: 38px;
+        min-height: 38px;
+        width: 38px;
+        min-width: 38px;
+    }
+}

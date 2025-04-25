@@ -1,0 +1,141 @@
+.slider-outer {
+    overflow: hidden;
+    position: relative;
+}
+ 
+.slider-inner {
+    padding-left: 42px;
+    padding-right: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 26px;
+}
+
+.slide-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slide-card-image-link {
+    display: block;
+    width: 100%;
+    height: 11vw;
+}
+
+.slide-card-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-card-heading {
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.slide-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--text-color);
+}
+
+.slide-card-small-text {
+    font-style: italic;
+    opacity: 0.7;
+    line-height: 100%;
+    font-size: 12px;
+}
+
+.featured-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+}
+
+.mobile-heading-span {
+    display: none;
+}
+
+.slide-card .access-icon-smaller {
+    margin-right: 1px;
+}
+
+/* Styles for large desktop */
+@media (min-width: 1439px) {  
+    .slider-inner {
+        padding-left: 2.92vw;
+        padding-right: 2.92vw;
+        gap: calc(1.81vw * var(--scale));
+    }
+    
+    .slide-card-heading {
+        margin-top: calc(0.83vw * var(--scale));
+        margin-bottom: calc(0.28vw * var(--scale));
+    }
+    
+    .slide-card-small-text {
+        font-size: calc(0.83vw * var(--scale));
+    }
+
+    .featured-slider {
+        gap: 0px;
+        padding: 0px;
+    }
+}
+
+/* Styles for tablet */
+@media (max-width: 991px) { 
+    .slider-inner {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        cursor: grab;
+        cursor: -webkit-grab;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    }
+    
+    .slide-card-image-link {
+        height: 26vw;
+        width: 36vw;
+    }
+
+    .slide-card-small-text {
+        font-size: 14px;
+    }
+
+    .featured-slider {
+        flex-direction: row;
+    }
+
+    .section-heading-slider {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .mobile-heading-span {
+        display: inline;
+    }
+}
+
+/* Styles for mobile */
+@media (max-width: 479px) { 
+    .slider-inner {
+        padding-left: 18px;
+        padding-right: 18px;
+        gap: 18px;
+    }
+
+    .featured-slider {
+        gap: 26px;
+    }
+
+    .slide-card-small-text {
+        font-size: 12px;
+    }
+}

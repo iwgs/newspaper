@@ -1,0 +1,2090 @@
+<!DOCTYPE html><html lang="en" data-image-style="Normal"><head>
+        <title>Newspaper</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/notifications.css">
+
+        <script src="js/global.js"></script>
+        <script src="js/custom-elements.js"></script>
+        <script>        
+            hexToRgba("#000000")
+            document.addEventListener('DOMContentLoaded', function () {
+                lazyLoadImages();
+            }) 
+        </script>
+
+        <style>
+            :root {
+                --text-color: #000000;
+                --background-color: #ffffff;
+                --logo-scale: 1;
+                --heading-style: uppercase;
+                --font1: var(--gh-font-body, 'Open Sans');
+                --font2: var(--gh-font-heading, 'EB Garamond');
+                --font3: var(--gh-font-heading, 'Roboto Condensed');
+                --font4: var(--gh-font-heading, 'Chomsky');
+            }     
+        </style>
+
+
+            <style>
+                @media (min-width: 991px) { 
+                    article,
+                    .main {
+                        opacity: 0;
+                    }
+                }
+            </style>
+
+
+
+        <meta name="description" content="Newspaper is a Ghost theme merging old-school newspaper charm with sleek modern design. Ideal for news sites, it embodies traditional journalism with a contemporary, engaging user experience.">
+    <link rel="canonical" href="https://newspaper.kusa-projects.com/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="https://newspaper.kusa-projects.com/page/2/">
+    
+    <meta property="og:site_name" content="Newspaper">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Newspaper">
+    <meta property="og:description" content="Newspaper is a Ghost theme merging old-school newspaper charm with sleek modern design. Ideal for news sites, it embodies traditional journalism with a contemporary, engaging user experience.">
+    <meta property="og:url" content="https://newspaper.kusa-projects.com/">
+    <meta property="og:image" content="images/publication-cover.jpg">
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Newspaper">
+    <meta name="twitter:description" content="Newspaper is a Ghost theme merging old-school newspaper charm with sleek modern design. Ideal for news sites, it embodies traditional journalism with a contemporary, engaging user experience.">
+    <meta name="twitter:url" content="https://newspaper.kusa-projects.com/">
+    <meta name="twitter:image" content="https://static.ghost.org/v5.0.0/images/publication-cover.jpg">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="840">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Newspaper",
+        "url": "https://newspaper.kusa-projects.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://newspaper.kusa-projects.com/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "url": "https://newspaper.kusa-projects.com/",
+    "name": "Newspaper",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+        "width": 1200,
+        "height": 840
+    },
+    "mainEntityOfPage": "https://newspaper.kusa-projects.com/",
+    "description": "Newspaper is a Ghost theme merging old-school newspaper charm with sleek modern design. Ideal for news sites, it embodies traditional journalism with a contemporary, engaging user experience."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.118">
+    <link rel="alternate" type="application/rss+xml" title="Newspaper" href="https://newspaper.kusa-projects.com/rss/">
+    <script defer="" src="js/portal.min.js" data-i18n="true" data-ghost="https://newspaper.kusa-projects.com/" data-key="82f5a4714cefc5617ccaddff54" data-api="https://newspaper.kusa-projects.com/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async="" src="https://js.stripe.com/v3/"></script>
+    <script defer="" src="js/sodo-search.min.js" data-key="82f5a4714cefc5617ccaddff54" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://newspaper.kusa-projects.com/" data-locale="en" crossorigin="anonymous"></script>
+    <script defer="" src="js/announcement-bar.min.js" data-announcement-bar="https://newspaper.kusa-projects.com/" data-api-url="https://newspaper.kusa-projects.com/members/api/announcement/" crossorigin="anonymous"></script>
+    <link href="https://newspaper.kusa-projects.com/webmentions/receive/" rel="webmention">
+    <script defer="" src="js/cards.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cards.min.css">
+    <script defer="" src="js/comment-counts.min.js" data-ghost-comments-counts-api="https://newspaper.kusa-projects.com/members/api/comments/counts/"></script>
+    <script defer="" src="js/member-attribution.min.js"></script><style>:root {--ghost-accent-color: #000000;}</style>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1MD7DPZW4J"></script>
+<script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-1MD7DPZW4J');</script>
+
+        <script>
+            loadFonts("Open Sans, EB Garamond, Roboto Condensed");
+        </script>
+    </head>
+    <body>
+        <div class="viewport">
+            <div class="site-content">
+                <div class="site-main">
+                    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+<custom-header class="header">
+    <div class="wide-container navbar-inner">
+        <div class="navbar-top">
+           <div class="socials">
+                    <a href="https://www.facebook.com/ghost" target="_blank" class="social" aria-label="Facebook">
+                        <div class="social-inner">
+                            <svg width="100%" height="100%" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 9.52381C19 4.26667 14.744 0 9.5 0C4.256 0 0 4.26667 0 9.52381C0 14.1333 3.268 17.9714 7.6 18.8571V12.381H5.7V9.52381H7.6V7.14286C7.6 5.30476 9.0915 3.80952 10.925 3.80952H13.3V6.66667H11.4C10.8775 6.66667 10.45 7.09524 10.45 7.61905V9.52381H13.3V12.381H10.45V19C15.2475 18.5238 19 14.4667 19 9.52381Z" fill="var(--text-color)"></path>
+</svg>
+                        </div>
+                    </a>
+
+                    <a href="https://x.com/ghost" target="_blank" class="social" aria-label="Twitter">
+                        <div class="social-inner">
+                            <svg width="100%" height="100%" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.985 0H0L7.0623 9.41783L0.38475 17.1H2.6505L8.11224 10.8166L12.825 17.1H18.81L11.4502 7.28631L17.784 0H15.5182L10.4002 5.88753L5.985 0ZM13.68 15.39L3.42 1.71H5.13L15.39 15.39H13.68Z" fill="var(--text-color)"></path>
+</svg>
+
+                        </div>
+                    </a>
+
+                <a href="#" id="instagram" target="_blank" class="social" aria-label="Instagram">
+                    <div class="social-inner social-inner-smaller">
+                        <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.92521 0.0011073C10.5819 -0.00141277 11.2387 0.00518759 11.8952 0.0209064L12.0698 0.027206C12.2714 0.0344056 12.4703 0.0434051 12.7106 0.0542046C13.6681 0.0992023 14.3215 0.250395 14.8948 0.472683C15.4887 0.701272 15.9891 1.01086 16.4895 1.51123C16.947 1.96085 17.3011 2.50473 17.5271 3.10505C17.7494 3.67832 17.9006 4.33258 17.9456 5.29014C17.9564 5.52952 17.9654 5.72931 17.9726 5.9309L17.978 6.10549C17.994 6.76173 18.0009 7.41816 17.9987 8.07459L17.9996 8.74596V9.9249C18.0018 10.5816 17.9949 11.2384 17.9789 11.8949L17.9735 12.0695C17.9663 12.2711 17.9573 12.47 17.9465 12.7103C17.9015 13.6678 17.7485 14.3212 17.5271 14.8944C17.3018 15.4954 16.9476 16.0397 16.4895 16.4892C16.0395 16.9466 15.4953 17.3007 14.8948 17.5268C14.3215 17.7491 13.6681 17.9003 12.7106 17.9453C12.4703 17.9561 12.2714 17.9651 12.0698 17.9723L11.8952 17.9777C11.2387 17.9937 10.5819 18.0006 9.92521 17.9984L9.25384 17.9993H8.0758C7.41907 18.0015 6.76235 17.9946 6.10581 17.9786L5.93122 17.9732C5.71758 17.9654 5.50398 17.9564 5.29045 17.9462C4.3329 17.9012 3.67953 17.7482 3.10536 17.5268C2.50481 17.3012 1.96083 16.9471 1.51154 16.4892C1.05351 16.0394 0.699085 15.4952 0.472995 14.8944C0.250706 14.3212 0.0995141 13.6678 0.0545165 12.7103C0.0444936 12.4967 0.035494 12.2831 0.0275179 12.0695L0.0230182 11.8949C0.00642628 11.2384 -0.00107414 10.5816 0.000519274 9.9249V8.07459C-0.00199247 7.41817 0.0046079 6.76174 0.0203183 6.10549L0.026618 5.9309C0.0338176 5.72931 0.0428171 5.52952 0.0536166 5.29014C0.0986143 4.33169 0.249806 3.67922 0.472095 3.10505C0.698319 2.50444 1.05343 1.96071 1.51244 1.51213C1.96142 1.05383 2.50506 0.699087 3.10536 0.472683C3.67953 0.250395 4.332 0.0992023 5.29045 0.0542046L5.93122 0.027206L6.10581 0.0227063C6.76204 0.00612273 7.41847 -0.00137769 8.07491 0.00020741L9.92521 0.0011073ZM9.00006 4.50088C8.40384 4.49244 7.8119 4.60259 7.25863 4.82492C6.70535 5.04725 6.20178 5.37732 5.77718 5.79596C5.35258 6.2146 5.01542 6.71345 4.78529 7.26352C4.55516 7.8136 4.43665 8.40392 4.43665 9.0002C4.43665 9.59647 4.55516 10.1868 4.78529 10.7369C5.01542 11.2869 5.35258 11.7858 5.77718 12.2044C6.20178 12.6231 6.70535 12.9531 7.25863 13.1755C7.8119 13.3978 8.40384 13.5079 9.00006 13.4995C10.1935 13.4995 11.338 13.0254 12.1819 12.1816C13.0257 11.3377 13.4998 10.1932 13.4998 8.99975C13.4998 7.80633 13.0257 6.6618 12.1819 5.81793C11.338 4.97406 10.1935 4.50088 9.00006 4.50088ZM9.00006 6.30078C9.3587 6.29418 9.71506 6.3591 10.0483 6.49176C10.3816 6.62442 10.6851 6.82217 10.9411 7.07343C11.197 7.3247 11.4004 7.62447 11.5392 7.95521C11.6781 8.28595 11.7496 8.64104 11.7497 8.99974C11.7497 9.35844 11.6783 9.71355 11.5396 10.0443C11.4009 10.3751 11.1976 10.675 10.9417 10.9263C10.6858 11.1777 10.3824 11.3755 10.0492 11.5083C9.71594 11.6411 9.3596 11.7061 9.00096 11.6996C8.28491 11.6996 7.59819 11.4152 7.09187 10.9088C6.58555 10.4025 6.3011 9.71579 6.3011 8.99975C6.3011 8.2837 6.58555 7.59698 7.09187 7.09065C7.59819 6.58433 8.28491 6.29988 9.00096 6.29988L9.00006 6.30078ZM13.7248 3.15095C13.4345 3.16257 13.1599 3.28607 12.9586 3.4956C12.7573 3.70513 12.6449 3.98442 12.6449 4.27499C12.6449 4.56555 12.7573 4.84485 12.9586 5.05437C13.1599 5.2639 13.4345 5.38741 13.7248 5.39903C14.0232 5.39903 14.3093 5.28051 14.5203 5.06954C14.7312 4.85857 14.8498 4.57244 14.8498 4.27409C14.8498 3.97573 14.7312 3.6896 14.5203 3.47863C14.3093 3.26767 14.0232 3.14915 13.7248 3.14915V3.15095Z" fill="var(--text-color)"></path>
+</svg>
+                    </div>
+                </a>
+
+                <a href="#" id="linkedin" target="_blank" class="social" aria-label="Linkedin">
+                    <div class="social-inner social-inner-smaller">
+                        <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 0C16.5304 0 17.0391 0.210714 17.4142 0.585786C17.7893 0.960859 18 1.46957 18 2V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H16ZM15.5 15.5V10.2C15.5 9.33539 15.1565 8.5062 14.5452 7.89483C13.9338 7.28346 13.1046 6.94 12.24 6.94C11.39 6.94 10.4 7.46 9.92 8.24V7.13H7.13V15.5H9.92V10.57C9.92 9.8 10.54 9.17 11.31 9.17C11.6813 9.17 12.0374 9.3175 12.2999 9.58005C12.5625 9.8426 12.71 10.1987 12.71 10.57V15.5H15.5ZM3.88 5.56C4.32556 5.56 4.75288 5.383 5.06794 5.06794C5.383 4.75288 5.56 4.32556 5.56 3.88C5.56 2.95 4.81 2.19 3.88 2.19C3.43178 2.19 3.00193 2.36805 2.68499 2.68499C2.36805 3.00193 2.19 3.43178 2.19 3.88C2.19 4.81 2.95 5.56 3.88 5.56ZM5.27 15.5V7.13H2.5V15.5H5.27Z" fill="var(--text-color)"></path>
+</svg>
+                    </div>
+                </a>
+
+                <a href="#" id="pinterest" target="_blank" class="social" aria-label="Pinterest">
+                    <div class="social-inner">
+                        <svg width="100%" height="100%" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.688 18.563C7.6 18.8385 8.5215 19 9.5 19C12.0196 19 14.4359 17.9991 16.2175 16.2175C17.9991 14.4359 19 12.0196 19 9.5C19 8.25244 18.7543 7.0171 18.2769 5.86451C17.7994 4.71191 17.0997 3.66464 16.2175 2.78249C15.3354 1.90033 14.2881 1.20056 13.1355 0.723144C11.9829 0.245725 10.7476 0 9.5 0C8.25244 0 7.0171 0.245725 5.86451 0.723144C4.71191 1.20056 3.66464 1.90033 2.78249 2.78249C1.00089 4.56408 0 6.98044 0 9.5C0 13.5375 2.5365 17.005 6.118 18.373C6.0325 17.632 5.947 16.4065 6.118 15.561L7.2105 10.868C7.2105 10.868 6.935 10.317 6.935 9.443C6.935 8.132 7.752 7.1535 8.683 7.1535C9.5 7.1535 9.88 7.752 9.88 8.5215C9.88 9.3385 9.3385 10.507 9.063 11.628C8.9015 12.559 9.557 13.376 10.507 13.376C12.198 13.376 13.509 11.571 13.509 9.025C13.509 6.745 11.875 5.187 9.5285 5.187C6.8495 5.187 5.2725 7.182 5.2725 9.2815C5.2725 10.0985 5.5385 10.925 5.9755 11.4665C6.061 11.5235 6.061 11.5995 6.0325 11.742L5.757 12.7775C5.757 12.939 5.6525 12.996 5.491 12.882C4.275 12.35 3.572 10.621 3.572 9.2245C3.572 6.2225 5.7 3.496 9.804 3.496C13.072 3.496 15.618 5.8425 15.618 8.9585C15.618 12.2265 13.5945 14.8485 10.697 14.8485C9.7755 14.8485 8.873 14.3545 8.55 13.775L7.9135 16.0265C7.695 16.8435 7.0965 17.936 6.688 18.5915V18.563Z" fill="var(--text-color)"></path>
+</svg>
+                    </div>
+                </a>
+
+                <span id="socials-info" class="hidden" data-urls="instagram: https://www.google.com/, linkedin: https://www.google.com/, pinterest: https://www.google.com/"></span>        
+           </div> 
+
+           <div class="menu-button-wrapper">
+                <button class="menu-button unstyled-button" aria-label="Menu button">
+                    <div class="menu-line first-line"></div>
+                    <div class="menu-line mobile-line"></div>
+                    <div class="menu-line second-line"></div>
+                </button>
+            </div>
+
+           <div class="logo-wrapper">
+                <a class="logo" href="https://newspaper.kusa-projects.com">
+                        <div class="navbar-logo-text">
+                            Newspaper
+                        </div>                       
+                </a>
+            </div>
+
+           <div class="navbar-account-links">
+                <a class="account-button-wrapper" aria-label="Search button" href="javascript:" data-ghost-search="">
+                    <div class="account-icon-wrapper">
+                        <svg width="100%" height="100%" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.91536 14.2502C9.32055 14.2499 10.6853 13.7795 11.7922 12.9138L15.2723 16.394L16.3917 15.2746L12.9116 11.7944C13.7777 10.6874 14.2484 9.32238 14.2487 7.91683C14.2487 4.42479 11.4074 1.5835 7.91536 1.5835C4.42332 1.5835 1.58203 4.42479 1.58203 7.91683C1.58203 11.4089 4.42332 14.2502 7.91536 14.2502ZM7.91536 3.16683C10.535 3.16683 12.6654 5.2972 12.6654 7.91683C12.6654 10.5365 10.535 12.6668 7.91536 12.6668C5.29574 12.6668 3.16536 10.5365 3.16536 7.91683C3.16536 5.2972 5.29574 3.16683 7.91536 3.16683Z" fill="var(--text-color)"></path>
+</svg>
+                    </div>
+                    <span class="account-button-text">
+                        Search
+                    </span>                      
+                </a>
+
+                        <div class="account-buttons-separator"></div>
+
+                        <a href="https://newspaper.kusa-projects.com/signin/" class="account-button-wrapper" aria-label="Sign in">
+                            <div class="account-icon-wrapper">
+                                <svg width="100%" height="100%" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.10938 9.49997C1.10938 7.27504 1.99323 5.14123 3.5665 3.56796C5.13976 1.99469 7.27357 1.11084 9.49851 1.11084C11.7234 1.11084 13.8573 1.99469 15.4305 3.56796C17.0038 5.14123 17.8876 7.27504 17.8876 9.49997C17.8876 11.7249 17.0038 13.8587 15.4305 15.432C13.8573 17.0053 11.7234 17.8891 9.49851 17.8891C7.27357 17.8891 5.13976 17.0053 3.5665 15.432C1.99323 13.8587 1.10938 11.7249 1.10938 9.49997ZM9.49851 2.31417C8.1057 2.31422 6.74293 2.71904 5.57597 3.47939C4.40902 4.23973 3.48818 5.32282 2.92548 6.5969C2.36279 7.87099 2.18249 9.28114 2.40652 10.6558C2.63056 12.0305 3.24926 13.3104 4.18737 14.3399C4.7569 13.4478 5.5421 12.7137 6.4704 12.2054C7.3987 11.6971 8.44015 11.431 9.49851 11.4316C10.5569 11.4309 11.5984 11.6969 12.5267 12.2053C13.455 12.7136 14.2402 13.4478 14.8096 14.3399C15.7478 13.3104 16.3665 12.0305 16.5905 10.6558C16.8145 9.28114 16.6342 7.87099 16.0715 6.5969C15.5088 5.32282 14.588 4.23973 13.421 3.47939C12.2541 2.71904 10.8913 2.31422 9.49851 2.31417ZM13.909 15.1734C13.4608 14.4009 12.8174 13.7597 12.0433 13.3142C11.2692 12.8687 10.3916 12.6345 9.49851 12.635C8.60537 12.6345 7.72779 12.8687 6.9537 13.3142C6.17961 13.7597 5.53621 14.4009 5.08798 15.1734C6.34801 16.1559 7.90069 16.6883 9.49851 16.6858C11.1604 16.6858 12.6905 16.1208 13.909 15.1734ZM6.52184 8.23964C6.52184 7.45018 6.83545 6.69305 7.39369 6.13482C7.95192 5.57659 8.70905 5.26297 9.49851 5.26297C10.288 5.26297 11.0451 5.57659 11.6033 6.13482C12.1616 6.69305 12.4752 7.45018 12.4752 8.23964C12.4752 9.0291 12.1616 9.78623 11.6033 10.3445C11.0451 10.9027 10.288 11.2163 9.49851 11.2163C8.70905 11.2163 7.95192 10.9027 7.39369 10.3445C6.83545 9.78623 6.52184 9.0291 6.52184 8.23964ZM9.49851 6.46631C9.26563 6.46631 9.03503 6.51218 8.81988 6.60129C8.60473 6.69041 8.40924 6.82103 8.24457 6.9857C8.0799 7.15037 7.94928 7.34586 7.86016 7.56101C7.77104 7.77617 7.72517 8.00676 7.72517 8.23964C7.72517 8.47252 7.77104 8.70311 7.86016 8.91826C7.94928 9.13342 8.0799 9.32891 8.24457 9.49358C8.40924 9.65825 8.60473 9.78887 8.81988 9.87799C9.03503 9.9671 9.26563 10.013 9.49851 10.013C9.96883 10.013 10.4199 9.82614 10.7524 9.49358C11.085 9.16101 11.2718 8.70996 11.2718 8.23964C11.2718 7.76932 11.085 7.31827 10.7524 6.9857C10.4199 6.65314 9.96883 6.46631 9.49851 6.46631Z" fill="var(--text-color)"></path>
+</svg>
+                            </div>
+                            <span class="account-button-text">
+                                Sign in
+                            </span>                              
+                        </a>
+
+                        <a href="https://newspaper.kusa-projects.com/subscribe/" class="button subscribe-button">
+                            Subscribe                          
+                        </a>
+           </div>
+        </div>
+
+        <div class="navbar-links-outer">
+            <div class="navbar-links-inner">
+                    <ul class="nav">
+            <li class="nav-home nav-current" data-label="Home">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/">Home</a>
+            </li>
+            <li class="nav-style-guide" data-label="Style Guide">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/style-guide/">Style Guide</a>
+            </li>
+            <li class="nav-documentation" data-label="Documentation">  
+                <a class="nav-link hover-underline" href="https://www.kusa-projects.com/newspaper-documentation">Documentation</a>
+            </li>
+            <li class="nav-demos nav-current" data-label="-Demos">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Demos</a>
+            </li>
+            <li class="nav-features nav-current" data-label="-Features">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Features</a>
+            </li>
+            <li class="nav-posts nav-current" data-label="-Posts">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Posts</a>
+            </li>
+            <li class="nav-archive" data-label="Archive">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/archive/">Archive</a>
+            </li>
+            <li class="nav-tags nav-current" data-label="-Tags">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Tags</a>
+            </li>
+            <li class="nav-tags-tags" data-label="-Tags--Tags">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/tags/">-Tags--Tags</a>
+            </li>
+            <li class="nav-tags-tag-column" data-label="-Tags--Tag (Column)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/tag/politics/">-Tags--Tag (Column)</a>
+            </li>
+            <li class="nav-tags-tag-simple" data-label="-Tags--Tag (Simple)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/tag/politics/?tag-layout=simple">-Tags--Tag (Simple)</a>
+            </li>
+            <li class="nav-authors nav-current" data-label="-Authors">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Authors</a>
+            </li>
+            <li class="nav-authors-authors" data-label="-Authors--Authors">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/authors/">-Authors--Authors</a>
+            </li>
+            <li class="nav-authors-author-column" data-label="-Authors--Author (Column)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/author/john-doe/">-Authors--Author (Column)</a>
+            </li>
+            <li class="nav-authors-author-author-image-left" data-label="-Authors--Author (Author Image Left)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/author/john-doe/?author-layout=author-image-left">-Authors--Author (Author Image Left)</a>
+            </li>
+            <li class="nav-authors-author-author-image-right" data-label="-Authors--Author (Author Image Right)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/author/john-doe/?author-layout=author-image-right">-Authors--Author (Author Image Right)</a>
+            </li>
+            <li class="nav-authors-author-simple" data-label="-Authors--Author (Simple)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/author/katarina-smith-demo/">-Authors--Author (Simple)</a>
+            </li>
+            <li class="nav-posts-post-narrow" data-label="-Posts--Post (Narrow)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=narrow&sidebar=false">-Posts--Post (Narrow)</a>
+            </li>
+            <li class="nav-posts-post-wide" data-label="-Posts--Post (Wide)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=wide&sidebar=false">-Posts--Post (Wide)</a>
+            </li>
+            <li class="nav-posts-post-featured-image-left" data-label="-Posts--Post (Featured Image Left)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=featured-image-left&sidebar=false">-Posts--Post (Featured Image Left)</a>
+            </li>
+            <li class="nav-posts-post-featured-image-right" data-label="-Posts--Post (Featured Image Right)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=featured-image-right&sidebar=false">-Posts--Post (Featured Image Right)</a>
+            </li>
+            <li class="nav-posts-post-narrow-with-sidebar" data-label="-Posts--Post (Narrow With Sidebar)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=narrow&sidebar=true">-Posts--Post (Narrow With Sidebar)</a>
+            </li>
+            <li class="nav-posts-post-wide-with-sidebar" data-label="-Posts--Post (Wide With Sidebar)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=wide&sidebar=true">-Posts--Post (Wide With Sidebar)</a>
+            </li>
+            <li class="nav-posts-post-image-left-with-sidebar" data-label="-Posts--Post (Image Left With Sidebar)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=featured-image-left&sidebar=true">-Posts--Post (Image Left With Sidebar)</a>
+            </li>
+            <li class="nav-posts-post-image-right-with-sidebar" data-label="-Posts--Post (Image Right With Sidebar)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries/?post-layout=featured-image-right&sidebar=true">-Posts--Post (Image Right With Sidebar)</a>
+            </li>
+            <li class="nav-posts-post-members-only-post" data-label="-Posts--Post (Members Only Post)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/innovation-in-the-corporate-world-unveiling-the-latest-business-trends/?post-layout=narrow&sidebar=false">-Posts--Post (Members Only Post)</a>
+            </li>
+            <li class="nav-account nav-current" data-label="-Account">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Account</a>
+            </li>
+            <li class="nav-account-account-all-data" data-label="-Account--Account (All Data)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/demo-account/">-Account--Account (All Data)</a>
+            </li>
+            <li class="nav-account-account-all-data-no-button" data-label="-Account--Account (All Data No Button)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/demo-account/?no-subscribe-button=true">-Account--Account (All Data No Button)</a>
+            </li>
+            <li class="nav-account-account-simple" data-label="-Account--Account (Simple)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/demo-account/?account-layout=simple">-Account--Account (Simple)</a>
+            </li>
+            <li class="nav-account-account-simple-no-button" data-label="-Account--Account (Simple No Button)">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/demo-account/?account-layout=simple&no-subscribe-button=true">-Account--Account (Simple No Button)</a>
+            </li>
+            <li class="nav-account-sign-up" data-label="-Account--Sign Up">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/signup/">-Account--Sign Up</a>
+            </li>
+            <li class="nav-account-sign-in" data-label="-Account--Sign In">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/signin/">-Account--Sign In</a>
+            </li>
+            <li class="nav-account-subscribe" data-label="-Account--Subscribe">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/subscribe/">-Account--Subscribe</a>
+            </li>
+            <li class="nav-get-theme" data-label="Get Theme">  
+                <a class="nav-link hover-underline" href="https://kusa-projects.lemonsqueezy.com/checkout/buy/861bc5c0-91fb-45c3-892e-82f61aaa3e89">Get Theme</a>
+            </li>
+            <li class="nav-kusa-projects" data-label="KUSA Projects">  
+                <a class="nav-link hover-underline" href="https://www.kusa-projects.com/">KUSA Projects</a>
+            </li>
+            <li class="nav-features-features" data-label="-Features--Features">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/features/">-Features--Features</a>
+            </li>
+            <li class="nav-features-membership" data-label="-Features--Membership">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/membership/">-Features--Membership</a>
+            </li>
+            <li class="nav-features-contact" data-label="-Features--Contact">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/contact/">-Features--Contact</a>
+            </li>
+            <li class="nav-features-faq" data-label="-Features--FAQ">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/faq/">-Features--FAQ</a>
+            </li>
+            <li class="nav-features-changelog" data-label="-Features--Changelog">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/changelog/">-Features--Changelog</a>
+            </li>
+            <li class="nav-features-404" data-label="-Features--404">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/404/">-Features--404</a>
+            </li>
+            <li class="nav-demos-old-newspaper-light" data-label="-Demos--Old Newspaper Light">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/?theme-preset=old-newspaper-light">-Demos--Old Newspaper Light</a>
+            </li>
+            <li class="nav-demos-modern-newspaper-light" data-label="-Demos--Modern Newspaper Light">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/?theme-preset=modern-newspaper-light">-Demos--Modern Newspaper Light</a>
+            </li>
+            <li class="nav-demos-old-newspaper-tinted" data-label="-Demos--Old Newspaper Tinted">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/?theme-preset=old-newspaper-tinted">-Demos--Old Newspaper Tinted</a>
+            </li>
+            <li class="nav-demos-elegant-newspaper-light" data-label="-Demos--Elegant Newspaper Light">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/?theme-preset=elegant-newspaper-light">-Demos--Elegant Newspaper Light</a>
+            </li>
+            <li class="nav-demos-elegant-newspaper-dark" data-label="-Demos--Elegant Newspaper Dark">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/?theme-preset=elegant-newspaper-dark">-Demos--Elegant Newspaper Dark</a>
+            </li>
+            <li class="nav-demos-old-newspaper-dark" data-label="-Demos--Old Newspaper Dark">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/?theme-preset=old-newspaper-dark">-Demos--Old Newspaper Dark</a>
+            </li>
+            <li class="nav-demos-modern-newspaper-dark" data-label="-Demos--Modern Newspaper Dark">  
+                <a class="nav-link hover-underline" href="https://newspaper.kusa-projects.com/?theme-preset=modern-newspaper-dark">-Demos--Modern Newspaper Dark</a>
+            </li>
+    </ul>
+
+
+                        <div class="subscribe-button-mobile-wrapper">
+                            <a href="https://newspaper.kusa-projects.com/subscribe/" class="button subscribe-button subscribe-button-mobile">
+                                Subscribe                          
+                            </a>
+                        </div>
+            </div>
+        </div>
+    </div>
+</custom-header>                    <link rel="stylesheet" type="text/css" href="css/announcement-bar.css">
+
+<custom-announcement-bar class="custom-announcement-bar wide-container" data-announcement-bar-type="Moving Several News">
+    <div class="announcement-heading">Announcement</div>
+    <div class="announcement-content">
+        <div class="announcement-inner">
+            <div class="announcement-text">
+            </div>
+            <div class="announcement-text">            
+            </div>
+        </div>
+        <div class="announcement-close-wrapper">
+            <button class="announcement-close-button unstyled-button" aria-label="Close Announcement Bar">
+                <svg width="100%" height="100%" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.617311 11L0 10.3827L4.88269 5.5L0 0.617311L0.617311 0L5.5 4.88269L10.3827 0L11 0.617311L6.11731 5.5L11 10.3827L10.3827 11L5.5 6.11731L0.617311 11Z" fill="var(--text-color)"></path>
+</svg>
+            </button>
+        </div>
+    </div>
+</custom-announcement-bar>                    
+<link rel="stylesheet" type="text/css" href="css/slider.css">
+<link rel="stylesheet" type="text/css" href="css/column-layout.css">
+<link rel="stylesheet" type="text/css" href="css/cards.css">
+
+<main class="homepage">
+    <section class="column-layout homepage-newsletter">
+        <div class="column-layout-grid">
+            <div class="left-column">
+                    
+<div class="small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/politics/" class="hover-underline">Politics</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/foreign-relations-diplomatic-talks-with-neighboring-countries/" class="medium-text hover-underline small-card-heading">
+        Relations: Talks with The Neighboring Countries
+    </a>
+
+        <a href="/foreign-relations-diplomatic-talks-with-neighboring-countries/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=600" alt="Relations: Talks with The Neighboring Countries" loading="eager">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Ultricies montes dignissim morbi iaculis in. Bibendum aenean at et diam mattis faucibus ultricies sed sit. Sit mattis dui mauris id a sit ut.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/politics/" class="hover-underline">Politics</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/government-announces-new-economic-stimulus/" class="medium-text hover-underline small-card-heading">
+        Government Announces New Economic Stimulus
+    </a>
+
+        <a href="/government-announces-new-economic-stimulus/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Government Announces New Economic Stimulus" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Eleifend tincidunt dictumst tellus ut. In in auctor urna elit orci eu. Pulvinar odio id malesuada ut quam mauris duis eget.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/politics/" class="hover-underline">Politics</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/unraveling-the-dynamics-of-political-strategies/" class="medium-text hover-underline small-card-heading">
+        Unraveling the Dynamics of Political Strategies
+    </a>
+
+        <a href="/unraveling-the-dynamics-of-political-strategies/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Unraveling the Dynamics of Political Strategies" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Risus lacus vitae urna in facilisis lacus. Ac fames libero commodo consectetur vitae a nisl id pulvinar. Vitae dui morbi eu sem tortor.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/business/" class="hover-underline">Business</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/strategies-for-sustainable-growth-a-business-owners-guide/" class="medium-text hover-underline small-card-heading">
+        Strategies for Sustainable Growth
+    </a>
+
+        <a href="/strategies-for-sustainable-growth-a-business-owners-guide/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Strategies for Sustainable Growth" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Urna cursus ac volutpat nibh rhoncus ipsum. Amet tellus euismod a nibh facilisis. Ac vulputate tempor morbi duis metus.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/business/" class="hover-underline">Business</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/navigating-market-trends-key-insights-for-business-success/" class="medium-text hover-underline small-card-heading">
+        Key Insights for Business Success
+    </a>
+
+        <a href="/navigating-market-trends-key-insights-for-business-success/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Key Insights for Business Success" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Vivamus tempor fringilla blandit vel auctor non tempus. Ut enim maecenas vitae integer vestibulum gravida. Magnis enim in in amet facilisi.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card">
+    <small class="small-card-small-text">
+            <span class="restricted-access-icon">
+                <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 5.99992V4.66659C11.3337 2.79992 9.86699 1.33325 8.00033 1.33325C6.13366 1.33325 4.66699 2.79992 4.66699 4.66659V5.99992C3.53366 5.99992 2.66699 6.86658 2.66699 7.99992V12.6666C2.66699 13.7999 3.53366 14.6666 4.66699 14.6666H11.3337C12.467 14.6666 13.3337 13.7999 13.3337 12.6666V7.99992C13.3337 6.86658 12.467 5.99992 11.3337 5.99992ZM6.00033 4.66659C6.00033 3.53325 6.86699 2.66659 8.00033 2.66659C9.13366 2.66659 10.0003 3.53325 10.0003 4.66659V5.99992H6.00033V4.66659Z" fill="var(--text-color)"></path>
+</svg>            </span>
+
+            <a href="/tag/business/" class="hover-underline">Business</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/innovation-in-the-corporate-world-unveiling-the-latest-business-trends/" class="medium-text hover-underline small-card-heading">
+        Unveiling the Latest Business Trends
+    </a>
+
+        <a href="/innovation-in-the-corporate-world-unveiling-the-latest-business-trends/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Unveiling the Latest Business Trends" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Praesent tincidunt duis suspendisse a in molestie justo at. Viverra a fringilla malesuada aliquet ac ultrices sit viverra risus. Gravida urna quis non blandit in.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/science/" class="hover-underline">Science</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/biotechnology-paving-the-way-for-a-healthier-future/" class="medium-text hover-underline small-card-heading">
+        Biotechnology: Paving the Way for a Healthier Future
+    </a>
+
+        <a href="/biotechnology-paving-the-way-for-a-healthier-future/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=600" alt="Biotechnology: Paving the Way for a Healthier Future" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Amet erat in phasellus mollis sed. Purus lacinia tristique orci rhoncus diam justo. Dictum vel eleifend tellus et sed purus.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/katarina-smith-demo/">Katarina Smith</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/economy/" class="hover-underline">Economy</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/global-economic-outlook-trends-and-forecasts-for-the-year-ahead/" class="medium-text hover-underline small-card-heading">
+        Trends and Forecasts for the Year Ahead
+    </a>
+
+        <a href="/global-economic-outlook-trends-and-forecasts-for-the-year-ahead/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="images/test-min_1.webp 320w, images/test-min_3.webp 440w, images/test-min_4.webp 600w, images/test-min_5.webp 960w" src="images/test-min.webp" alt="Trends and Forecasts for the Year Ahead" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Pretium arcu tortor vel lectus at risus porttitor sollicitudin. Facilisi iaculis vitae ornare adipiscing. Nec ultrices pellentesque est est vel.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>            </div>
+
+            <div class="center-column">
+                <div class="big-card-desktop">
+                        <div class="big-card">
+        <a href="/foreign-relations-diplomatic-talks-with-neighboring-countries/" class="big-card-image-link hover-image-opacity">                   
+            <figure class="big-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=600" alt="Relations: Talks with The Neighboring Countries">
+            </figure> 
+        </a>                            
+
+    <small class="small-card-small-text">
+        
+            <a href="/tag/politics/" class="hover-underline">Politics</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/foreign-relations-diplomatic-talks-with-neighboring-countries/" class="big-text hover-underline big-card-heading">
+        Relations: Talks with The Neighboring Countries
+    </a>
+
+    <p class="big-card-text three-lines initial-paragraph-reset">
+        Ultricies montes dignissim morbi iaculis in. Bibendum aenean at et diam mattis faucibus ultricies sed sit. Sit mattis dui mauris id a sit ut.
+    </p>
+
+    <small class="small-card-bottom-text">
+        by <a href="/author/john-doe/">John Doe</a>
+    </small>
+</div>                </div>
+        
+                <div class="newsletter-outer">
+    <div class="newsletter">
+        <small class="newsletter-small-top-text">
+            Subscribe to our newsletter
+        </small>
+
+        <div class="big-text newsletter-heading">
+            Get all the latest news delivered straight to your inbox.
+        </div>
+
+        <form data-members-form="subscribe" class="subscribe-form">
+            <div class="subscribe-with-alerts">
+                <div class="subscribe-wrapper">
+                    <input data-members-email="" type="email" required="true" placeholder="Your.email@example.com" class="subscribe-input">
+                    <button class="submit-button" type="submit" aria-label="Subscribe">
+                        Subscribe
+                    </button>
+                </div>
+
+                <small class="newsletter-small-bottom-text">
+                    No spam. Unsubscribe anytime.
+                </small>
+
+                <div class="form-alerts">
+                    <small class="form-alert loading-alert">Processing your request...</small>
+                    <small class="form-alert success-alert">Please check your inbox and click the link to confirm your subscription.</small>
+                    <small class="form-alert error-alert" data-members-error=""></small>
+                </div> 
+            </div>            
+        </form>
+    </div>
+</div>
+                <div class="horizontal-cards">
+                        <div class="horizontal-card">
+    <div class="horizontal-card-inner">
+        <small class="small-card-small-text">
+
+                    <a href="/tag/politics/" class="hover-underline">Politics</a>
+                    <span>��-��</span>
+                
+                <span class="small-card-date">
+                    Jan 22, 2024  
+                </span>
+        </small>
+    
+        <a href="/government-announces-new-economic-stimulus/" class="medium-text hover-underline small-card-heading two-lines-mobile">
+            Government Announces New Economic Stimulus
+        </a>
+
+        <small class="small-card-bottom-text">
+                by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+
+        <a href="/government-announces-new-economic-stimulus/" class="small-card-image-link horizontal-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=150 300w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=320 720w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600 960w" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Government Announces New Economic Stimulus" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+</div>                        <div class="horizontal-card">
+    <div class="horizontal-card-inner">
+        <small class="small-card-small-text">
+
+                    <a href="/tag/politics/" class="hover-underline">Politics</a>
+                    <span>��-��</span>
+                
+                <span class="small-card-date">
+                    Jan 22, 2024  
+                </span>
+        </small>
+    
+        <a href="/unraveling-the-dynamics-of-political-strategies/" class="medium-text hover-underline small-card-heading two-lines-mobile">
+            Unraveling the Dynamics of Political Strategies
+        </a>
+
+        <small class="small-card-bottom-text">
+                by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+
+        <a href="/unraveling-the-dynamics-of-political-strategies/" class="small-card-image-link horizontal-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=150 300w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=320 720w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=600 960w" src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Unraveling the Dynamics of Political Strategies" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+</div>                        <div class="horizontal-card">
+    <div class="horizontal-card-inner">
+        <small class="small-card-small-text">
+
+                    <a href="/tag/business/" class="hover-underline">Business</a>
+                    <span>��-��</span>
+                
+                <span class="small-card-date">
+                    Jan 22, 2024  
+                </span>
+        </small>
+    
+        <a href="/strategies-for-sustainable-growth-a-business-owners-guide/" class="medium-text hover-underline small-card-heading two-lines-mobile">
+            Strategies for Sustainable Growth
+        </a>
+
+        <small class="small-card-bottom-text">
+                by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+
+        <a href="/strategies-for-sustainable-growth-a-business-owners-guide/" class="small-card-image-link horizontal-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=150 300w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320 720w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600 960w" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Strategies for Sustainable Growth" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+</div>                        <div class="horizontal-card">
+    <div class="horizontal-card-inner">
+        <small class="small-card-small-text">
+
+                    <a href="/tag/business/" class="hover-underline">Business</a>
+                    <span>��-��</span>
+                
+                <span class="small-card-date">
+                    Jan 22, 2024  
+                </span>
+        </small>
+    
+        <a href="/navigating-market-trends-key-insights-for-business-success/" class="medium-text hover-underline small-card-heading two-lines-mobile">
+            Key Insights for Business Success
+        </a>
+
+        <small class="small-card-bottom-text">
+                by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+
+        <a href="/navigating-market-trends-key-insights-for-business-success/" class="small-card-image-link horizontal-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=150 300w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320 720w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600 960w" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Key Insights for Business Success" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+</div>                        <div class="horizontal-card">
+    <div class="horizontal-card-inner">
+        <small class="small-card-small-text">
+                    <span class="restricted-access-icon">
+                        <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 5.99992V4.66659C11.3337 2.79992 9.86699 1.33325 8.00033 1.33325C6.13366 1.33325 4.66699 2.79992 4.66699 4.66659V5.99992C3.53366 5.99992 2.66699 6.86658 2.66699 7.99992V12.6666C2.66699 13.7999 3.53366 14.6666 4.66699 14.6666H11.3337C12.467 14.6666 13.3337 13.7999 13.3337 12.6666V7.99992C13.3337 6.86658 12.467 5.99992 11.3337 5.99992ZM6.00033 4.66659C6.00033 3.53325 6.86699 2.66659 8.00033 2.66659C9.13366 2.66659 10.0003 3.53325 10.0003 4.66659V5.99992H6.00033V4.66659Z" fill="var(--text-color)"></path>
+</svg>                    </span>
+
+                    <a href="/tag/business/" class="hover-underline">Business</a>
+                    <span>��-��</span>
+                
+                <span class="small-card-date">
+                    Jan 22, 2024  
+                </span>
+        </small>
+    
+        <a href="/innovation-in-the-corporate-world-unveiling-the-latest-business-trends/" class="medium-text hover-underline small-card-heading two-lines-mobile">
+            Unveiling the Latest Business Trends
+        </a>
+
+        <small class="small-card-bottom-text">
+                by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+
+        <a href="/innovation-in-the-corporate-world-unveiling-the-latest-business-trends/" class="small-card-image-link horizontal-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=150 300w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=320 720w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600 960w" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Unveiling the Latest Business Trends" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+</div>                        <div class="horizontal-card">
+    <div class="horizontal-card-inner">
+        <small class="small-card-small-text">
+
+                    <a href="/tag/science/" class="hover-underline">Science</a>
+                    <span>��-��</span>
+                
+                <span class="small-card-date">
+                    Jan 22, 2024  
+                </span>
+        </small>
+    
+        <a href="/biotechnology-paving-the-way-for-a-healthier-future/" class="medium-text hover-underline small-card-heading two-lines-mobile">
+            Biotechnology: Paving the Way for a Healthier Future
+        </a>
+
+        <small class="small-card-bottom-text">
+                by <a href="/author/katarina-smith-demo/">Katarina Smith</a>
+        </small>
+    </div>
+
+        <a href="/biotechnology-paving-the-way-for-a-healthier-future/" class="small-card-image-link horizontal-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=150 300w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=320 720w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=600 960w" src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=600" alt="Biotechnology: Paving the Way for a Healthier Future" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+</div>                        <div class="horizontal-card">
+    <div class="horizontal-card-inner">
+        <small class="small-card-small-text">
+
+                    <a href="/tag/economy/" class="hover-underline">Economy</a>
+                    <span>��-��</span>
+                
+                <span class="small-card-date">
+                    Jan 22, 2024  
+                </span>
+        </small>
+    
+        <a href="/global-economic-outlook-trends-and-forecasts-for-the-year-ahead/" class="medium-text hover-underline small-card-heading two-lines-mobile">
+            Trends and Forecasts for the Year Ahead
+        </a>
+
+        <small class="small-card-bottom-text">
+                by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+
+        <a href="/global-economic-outlook-trends-and-forecasts-for-the-year-ahead/" class="small-card-image-link horizontal-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="images/test-min_2.webp 300w, images/test-min_1.webp 720w, images/test-min_4.webp 960w" src="images/test-min.webp" alt="Trends and Forecasts for the Year Ahead" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+</div>                </div>  
+            </div>
+
+                    <div class="right-column">
+                        <div class="section-heading-slider">
+                            <div class="section-heading">
+                                <span>
+                                    Featured Articles
+                                </span>
+
+                                <span class="mobile-heading-span">
+                                    8 Articles
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-outer">
+                            <div class="slider-inner featured-slider">
+                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/media/" class="hover-underline">Media</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/unraveling-fake-news-a-deep-dive-into-media/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        Unraveling Fake News: A Deep Dive into Media
+    </a>
+
+        <a href="/unraveling-fake-news-a-deep-dive-into-media/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxtZWRpYXxlbnwwfHx8fDE3MDU5MTMyNjN8MA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxtZWRpYXxlbnwwfHx8fDE3MDU5MTMyNjN8MA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxtZWRpYXxlbnwwfHx8fDE3MDU5MTMyNjN8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxtZWRpYXxlbnwwfHx8fDE3MDU5MTMyNjN8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxtZWRpYXxlbnwwfHx8fDE3MDU5MTMyNjN8MA&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxtZWRpYXxlbnwwfHx8fDE3MDU5MTMyNjN8MA&ixlib=rb-4.0.3&q=80&w=320" alt="Unraveling Fake News: A Deep Dive into Media" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Aliquet nunc egestas amet lectus tristique varius sagittis ullamcorper. Tincidunt arcu dictum eu turpis luctus auctor. Sodales in orci nam nec.
+        </p>
+    </div>
+</div>                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/economy/" class="hover-underline">Economy</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/navigating-economic-challenges-strategies-for-individuals-and-businesses/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        Strategies for Individuals and Businesses
+    </a>
+
+        <a href="/navigating-economic-challenges-strategies-for-individuals-and-businesses/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1524414139215-35c99f80112d?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE2fHxlY29ub215fGVufDB8fHx8MTcwNTkwNzg0OHww&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1524414139215-35c99f80112d?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE2fHxlY29ub215fGVufDB8fHx8MTcwNTkwNzg0OHww&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1524414139215-35c99f80112d?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE2fHxlY29ub215fGVufDB8fHx8MTcwNTkwNzg0OHww&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1524414139215-35c99f80112d?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE2fHxlY29ub215fGVufDB8fHx8MTcwNTkwNzg0OHww&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1524414139215-35c99f80112d?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE2fHxlY29ub215fGVufDB8fHx8MTcwNTkwNzg0OHww&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1524414139215-35c99f80112d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE2fHxlY29ub215fGVufDB8fHx8MTcwNTkwNzg0OHww&ixlib=rb-4.0.3&q=80&w=320" alt="Strategies for Individuals and Businesses" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Pulvinar nisi habitant diam velit elit proin imperdiet. Velit vitae eu metus ut aliquam elit. Augue pulvinar amet urna sed egestas vivamus.
+        </p>
+    </div>
+</div>                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+            <span class="restricted-access-icon access-icon-smaller">
+                <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 5.99992V4.66659C11.3337 2.79992 9.86699 1.33325 8.00033 1.33325C6.13366 1.33325 4.66699 2.79992 4.66699 4.66659V5.99992C3.53366 5.99992 2.66699 6.86658 2.66699 7.99992V12.6666C2.66699 13.7999 3.53366 14.6666 4.66699 14.6666H11.3337C12.467 14.6666 13.3337 13.7999 13.3337 12.6666V7.99992C13.3337 6.86658 12.467 5.99992 11.3337 5.99992ZM6.00033 4.66659C6.00033 3.53325 6.86699 2.66659 8.00033 2.66659C9.13366 2.66659 10.0003 3.53325 10.0003 4.66659V5.99992H6.00033V4.66659Z" fill="var(--text-color)"></path>
+</svg>            </span>
+
+            <a href="/tag/media/" class="hover-underline">Media</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/the-evolution-of-media-trends-in-the-industry/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        The Evolution of Media: Trends in the Industry
+    </a>
+
+        <a href="/the-evolution-of-media-trends-in-the-industry/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1559526324-c1f275fbfa32?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1lZGlhfGVufDB8fHx8MTcwNTkxMzI2M3ww&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1559526324-c1f275fbfa32?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1lZGlhfGVufDB8fHx8MTcwNTkxMzI2M3ww&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1559526324-c1f275fbfa32?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1lZGlhfGVufDB8fHx8MTcwNTkxMzI2M3ww&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1559526324-c1f275fbfa32?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1lZGlhfGVufDB8fHx8MTcwNTkxMzI2M3ww&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1559526324-c1f275fbfa32?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1lZGlhfGVufDB8fHx8MTcwNTkxMzI2M3ww&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1559526324-c1f275fbfa32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG1lZGlhfGVufDB8fHx8MTcwNTkxMzI2M3ww&ixlib=rb-4.0.3&q=80&w=320" alt="The Evolution of Media: Trends in the Industry" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Amet feugiat augue cursus feugiat ut ut morbi aliquet et. Elementum eros sit et consectetur quis commodo tortor. Cursus accumsan nulla at in vulputate.
+        </p>
+    </div>
+</div>                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/education/" class="hover-underline">Education</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/the-role-of-technology-in-education/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        The Role of Technology in Education
+    </a>
+
+        <a href="/the-role-of-technology-in-education/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=320" alt="The Role of Technology in Education" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Ut egestas risus nisl mauris purus tortor ipsum leo. Sem mi volutpat lobortis mauris pharetra dolor risus. Lectus gravida convallis etiam pretium.
+        </p>
+    </div>
+</div>                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+            <span class="restricted-access-icon access-icon-smaller">
+                <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 5.99992V4.66659C11.3337 2.79992 9.86699 1.33325 8.00033 1.33325C6.13366 1.33325 4.66699 2.79992 4.66699 4.66659V5.99992C3.53366 5.99992 2.66699 6.86658 2.66699 7.99992V12.6666C2.66699 13.7999 3.53366 14.6666 4.66699 14.6666H11.3337C12.467 14.6666 13.3337 13.7999 13.3337 12.6666V7.99992C13.3337 6.86658 12.467 5.99992 11.3337 5.99992ZM6.00033 4.66659C6.00033 3.53325 6.86699 2.66659 8.00033 2.66659C9.13366 2.66659 10.0003 3.53325 10.0003 4.66659V5.99992H6.00033V4.66659Z" fill="var(--text-color)"></path>
+</svg>            </span>
+
+            <a href="/tag/education/" class="hover-underline">Education</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/trends-shaping-the-classroom-of-tomorrow/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        Trends Shaping the Classroom of Tomorrow
+    </a>
+
+        <a href="/trends-shaping-the-classroom-of-tomorrow/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=320" alt="Trends Shaping the Classroom of Tomorrow" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Lobortis sagittis nisi morbi feugiat nisl pulvinar ultricies dignissim. Orci amet at magna viverra auctor ultrices eu sem. Ut nullam justo nullam eu.
+        </p>
+    </div>
+</div>                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/education/" class="hover-underline">Education</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/innovations-in-educational-pedagogy/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        Innovations in Educational Pedagogy
+    </a>
+
+        <a href="/innovations-in-educational-pedagogy/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1594312915251-48db9280c8f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEzfHxlZHVjYXRpb258ZW58MHx8fHwxNzA1OTA3OTQzfDA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1594312915251-48db9280c8f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEzfHxlZHVjYXRpb258ZW58MHx8fHwxNzA1OTA3OTQzfDA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1594312915251-48db9280c8f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEzfHxlZHVjYXRpb258ZW58MHx8fHwxNzA1OTA3OTQzfDA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1594312915251-48db9280c8f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEzfHxlZHVjYXRpb258ZW58MHx8fHwxNzA1OTA3OTQzfDA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1594312915251-48db9280c8f1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEzfHxlZHVjYXRpb258ZW58MHx8fHwxNzA1OTA3OTQzfDA&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1594312915251-48db9280c8f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEzfHxlZHVjYXRpb258ZW58MHx8fHwxNzA1OTA3OTQzfDA&ixlib=rb-4.0.3&q=80&w=320" alt="Innovations in Educational Pedagogy" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Quis accumsan a nunc porttitor in interdum convallis nisl. Nibh adipiscing sagittis viverra bibendum. Adipiscing dignissim augue lobortis quis non.
+        </p>
+    </div>
+</div>                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/finance/" class="hover-underline">Finance</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/navigating-market-volatility-strategies-for-investors/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        Navigating Market: Strategies for Investors
+    </a>
+
+        <a href="/navigating-market-volatility-strategies-for-investors/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUxfHxmaW5hbmNlfGVufDB8fHx8MTcwNTkxMjg2N3ww&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUxfHxmaW5hbmNlfGVufDB8fHx8MTcwNTkxMjg2N3ww&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUxfHxmaW5hbmNlfGVufDB8fHx8MTcwNTkxMjg2N3ww&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUxfHxmaW5hbmNlfGVufDB8fHx8MTcwNTkxMjg2N3ww&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUxfHxmaW5hbmNlfGVufDB8fHx8MTcwNTkxMjg2N3ww&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUxfHxmaW5hbmNlfGVufDB8fHx8MTcwNTkxMjg2N3ww&ixlib=rb-4.0.3&q=80&w=320" alt="Navigating Market: Strategies for Investors" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Pretium lacus at mollis ornare. Sed habitasse aliquam euismod nullam mattis scelerisque. A dignissim eu sem odio sed tellus. Pretium lacus at mollis ornare.
+        </p>
+    </div>
+</div>                                    <div class="extra-small-card">
+    <small class="small-card-small-text">
+            <span class="restricted-access-icon access-icon-smaller">
+                <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 5.99992V4.66659C11.3337 2.79992 9.86699 1.33325 8.00033 1.33325C6.13366 1.33325 4.66699 2.79992 4.66699 4.66659V5.99992C3.53366 5.99992 2.66699 6.86658 2.66699 7.99992V12.6666C2.66699 13.7999 3.53366 14.6666 4.66699 14.6666H11.3337C12.467 14.6666 13.3337 13.7999 13.3337 12.6666V7.99992C13.3337 6.86658 12.467 5.99992 11.3337 5.99992ZM6.00033 4.66659C6.00033 3.53325 6.86699 2.66659 8.00033 2.66659C9.13366 2.66659 10.0003 3.53325 10.0003 4.66659V5.99992H6.00033V4.66659Z" fill="var(--text-color)"></path>
+</svg>            </span>
+
+            <a href="/tag/finance/" class="hover-underline">Finance</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+            Jan 22, 2024  
+        </span>
+    </small>
+ 
+    <a href="/the-role-of-esg-in-finance-sustainable-future/" class="small-text hover-underline extra-small-card-heading two-lines-mobile">
+        The Role of ESG in Finance: Sustainable Future
+    </a>
+
+        <a href="/the-role-of-esg-in-finance-sustainable-future/" class="extra-small-card-image-link hover-image-opacity">                   
+            <figure class="extra-small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=600 600w" src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=320" alt="The Role of ESG in Finance: Sustainable Future" loading="lazy" decoding="async">
+            </figure> 
+        </a>                            
+
+    <div class="extra-small-card-mobile-excerpt">
+        <p class=" three-lines initial-paragraph-reset">
+            Massa quis ut morbi amet ut non nec tristique. Massa tincidunt eget bibendum iaculis mi platea risus. Tellus sollicitudin vel euismod cursus.
+        </p>
+    </div>
+</div>                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+        <section class="featured-tags-section">
+            <featured-tags data-featured-tags="politics, business">
+                <div class="featured-tags-inner"></div>
+            </featured-tags>
+        </section>
+
+    <section class="articles-grid-section">
+        <div class="wide-container">
+            <div class="section-heading">
+                <span id="data-length" data-length="24 Articles">
+                    Latest Articles
+                </span>
+
+                    <a href="https://newspaper.kusa-projects.com/archive/" class="section-heading-button">
+                        View All 
+                        
+                        <div class="section-heading-arrow">                        
+                            <svg width="100%" height="100%" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_134_4019)">
+        <path d="M-24.5391 5L24.3263 5" stroke="var(--text-color)"></path>
+        <path d="M18.614 9.375C18.614 9.375 18.4236 5.125 24.3255 5" stroke="var(--text-color)"></path>
+        <path d="M18.614 0.625C18.614 0.625 18.4236 4.875 24.3255 5" stroke="var(--text-color)"></path>
+    </g>
+    <defs>
+        <clipPath id="clip0_134_4019">
+            <rect width="25.3846" height="10" fill="white"></rect>
+        </clipPath>
+    </defs>
+</svg>
+                        </div>                              
+                    </a>
+            </div>
+            
+            <div id="pagination-grid" class="grid pagination-grid">
+                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/politics/" class="hover-underline">Politics</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/foreign-relations-diplomatic-talks-with-neighboring-countries/" class="medium-text hover-underline small-card-heading">
+        Relations: Talks with The Neighboring Countries
+    </a>
+
+        <a href="/foreign-relations-diplomatic-talks-with-neighboring-countries/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1575320181282-9afab399332c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=600" alt="Relations: Talks with The Neighboring Countries" loading="eager">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Ultricies montes dignissim morbi iaculis in. Bibendum aenean at et diam mattis faucibus ultricies sed sit. Sit mattis dui mauris id a sit ut.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/politics/" class="hover-underline">Politics</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/government-announces-new-economic-stimulus/" class="medium-text hover-underline small-card-heading">
+        Government Announces New Economic Stimulus
+    </a>
+
+        <a href="/government-announces-new-economic-stimulus/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ3fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Government Announces New Economic Stimulus" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Eleifend tincidunt dictumst tellus ut. In in auctor urna elit orci eu. Pulvinar odio id malesuada ut quam mauris duis eget.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/politics/" class="hover-underline">Politics</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/unraveling-the-dynamics-of-political-strategies/" class="medium-text hover-underline small-card-heading">
+        Unraveling the Dynamics of Political Strategies
+    </a>
+
+        <a href="/unraveling-the-dynamics-of-political-strategies/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxQb2xpdGljc3xlbnwwfHx8fDE3MDU5MDk5Nzd8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Unraveling the Dynamics of Political Strategies" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Risus lacus vitae urna in facilisis lacus. Ac fames libero commodo consectetur vitae a nisl id pulvinar. Vitae dui morbi eu sem tortor.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/business/" class="hover-underline">Business</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/strategies-for-sustainable-growth-a-business-owners-guide/" class="medium-text hover-underline small-card-heading">
+        Strategies for Sustainable Growth
+    </a>
+
+        <a href="/strategies-for-sustainable-growth-a-business-owners-guide/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Strategies for Sustainable Growth" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Urna cursus ac volutpat nibh rhoncus ipsum. Amet tellus euismod a nibh facilisis. Ac vulputate tempor morbi duis metus.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/business/" class="hover-underline">Business</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/navigating-market-trends-key-insights-for-business-success/" class="medium-text hover-underline small-card-heading">
+        Key Insights for Business Success
+    </a>
+
+        <a href="/navigating-market-trends-key-insights-for-business-success/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Key Insights for Business Success" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Vivamus tempor fringilla blandit vel auctor non tempus. Ut enim maecenas vitae integer vestibulum gravida. Magnis enim in in amet facilisi.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+            <span class="restricted-access-icon">
+                <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 5.99992V4.66659C11.3337 2.79992 9.86699 1.33325 8.00033 1.33325C6.13366 1.33325 4.66699 2.79992 4.66699 4.66659V5.99992C3.53366 5.99992 2.66699 6.86658 2.66699 7.99992V12.6666C2.66699 13.7999 3.53366 14.6666 4.66699 14.6666H11.3337C12.467 14.6666 13.3337 13.7999 13.3337 12.6666V7.99992C13.3337 6.86658 12.467 5.99992 11.3337 5.99992ZM6.00033 4.66659C6.00033 3.53325 6.86699 2.66659 8.00033 2.66659C9.13366 2.66659 10.0003 3.53325 10.0003 4.66659V5.99992H6.00033V4.66659Z" fill="var(--text-color)"></path>
+</svg>            </span>
+
+            <a href="/tag/business/" class="hover-underline">Business</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/innovation-in-the-corporate-world-unveiling-the-latest-business-trends/" class="medium-text hover-underline small-card-heading">
+        Unveiling the Latest Business Trends
+    </a>
+
+        <a href="/innovation-in-the-corporate-world-unveiling-the-latest-business-trends/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM0fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0OTF8MA&ixlib=rb-4.0.3&q=80&w=600" alt="Unveiling the Latest Business Trends" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Praesent tincidunt duis suspendisse a in molestie justo at. Viverra a fringilla malesuada aliquet ac ultrices sit viverra risus. Gravida urna quis non blandit in.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/science/" class="hover-underline">Science</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/biotechnology-paving-the-way-for-a-healthier-future/" class="medium-text hover-underline small-card-heading">
+        Biotechnology: Paving the Way for a Healthier Future
+    </a>
+
+        <a href="/biotechnology-paving-the-way-for-a-healthier-future/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=320 320w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=440 440w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=600 600w, https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=960 960w" src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHNjaWVuY2V8ZW58MHx8fHwxNzA1OTA3ODk4fDA&ixlib=rb-4.0.3&q=80&w=600" alt="Biotechnology: Paving the Way for a Healthier Future" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Amet erat in phasellus mollis sed. Purus lacinia tristique orci rhoncus diam justo. Dictum vel eleifend tellus et sed purus.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/katarina-smith-demo/">Katarina Smith</a>
+        </small>
+    </div>
+</div>                    
+<div class="small-card grid-small-card">
+    <small class="small-card-small-text">
+
+            <a href="/tag/economy/" class="hover-underline">Economy</a>
+            <span>��-��</span>
+        
+        <span class="small-card-date">
+                Jan 22, 2024
+        </span>
+    </small>
+ 
+    <a href="/global-economic-outlook-trends-and-forecasts-for-the-year-ahead/" class="medium-text hover-underline small-card-heading">
+        Trends and Forecasts for the Year Ahead
+    </a>
+
+        <a href="/global-economic-outlook-trends-and-forecasts-for-the-year-ahead/" class="small-card-image-link hover-image-opacity">                   
+            <figure class="small-card-image-wrapper">
+                <img srcset="images/test-min_1.webp 320w, images/test-min_3.webp 440w, images/test-min_4.webp 600w, images/test-min_5.webp 960w" src="images/test-min.webp" alt="Trends and Forecasts for the Year Ahead" loading="lazy">
+            </figure> 
+        </a> 
+
+    <div class="small-card-text-and-author text-min-height">
+        <p class="small-card-text three-lines initial-paragraph-reset">
+            Pretium arcu tortor vel lectus at risus porttitor sollicitudin. Facilisi iaculis vitae ornare adipiscing. Nec ultrices pellentesque est est vel.
+        </p>
+
+        <small class="small-card-bottom-text">
+            by <a href="/author/john-doe/">John Doe</a>
+        </small>
+    </div>
+</div>            </div>
+
+            <custom-pagination id="custom-pagination" data-current-page="1" data-is-archivepage="">
+    <nav class="pagination-nav">
+            <button id="load-more-btn" class="pagination-button button" style="display: flex">
+                Load more
+            </button>
+    </nav>
+</custom-pagination>
+        </div>
+    </section>
+
+            <section class="footer-slider">
+                <div class="wide-container">
+                    <div class="section-heading">
+                        <span>
+                            Popular Tags
+                        </span>
+
+                            <a href="https://newspaper.kusa-projects.com/tags/" class="section-heading-button">
+                                View All 
+                                
+                                <div class="section-heading-arrow">                        
+                                    <svg width="100%" height="100%" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_134_4019)">
+        <path d="M-24.5391 5L24.3263 5" stroke="var(--text-color)"></path>
+        <path d="M18.614 9.375C18.614 9.375 18.4236 5.125 24.3255 5" stroke="var(--text-color)"></path>
+        <path d="M18.614 0.625C18.614 0.625 18.4236 4.875 24.3255 5" stroke="var(--text-color)"></path>
+    </g>
+    <defs>
+        <clipPath id="clip0_134_4019">
+            <rect width="25.3846" height="10" fill="white"></rect>
+        </clipPath>
+    </defs>
+</svg>
+                                </div>                              
+                            </a>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="slider-outer section-padding-small">
+                        <div class="slider-inner">                           
+                                
+<div class="slide-card"> 
+    <a href="/tag/business/" class="slide-card-image-link hover-image-opacity" aria-label="Business"> 
+            <figure class="slide-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320 320w" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxidXNpbmVzc3xlbnwwfHx8fDE3MDU5MDc0ODV8MA&ixlib=rb-4.0.3&q=80&w=320" alt="Business" loading="eager">
+            </figure> 
+    </a>                            
+    
+
+    <a href="/tag/business/" class="small-text hover-underline slide-card-heading two-lines">
+        Business
+    </a>
+
+    <small class="slide-card-small-text">
+            9 Articles
+    </small>
+</div>                                
+<div class="slide-card"> 
+    <a href="/tag/economy/" class="slide-card-image-link hover-image-opacity" aria-label="Economy"> 
+            <figure class="slide-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1604594849809-dfedbc827105?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVjb25vbXl8ZW58MHx8fHwxNzA1OTA3ODQ4fDA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1604594849809-dfedbc827105?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVjb25vbXl8ZW58MHx8fHwxNzA1OTA3ODQ4fDA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1604594849809-dfedbc827105?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVjb25vbXl8ZW58MHx8fHwxNzA1OTA3ODQ4fDA&ixlib=rb-4.0.3&q=80&w=320 320w" src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVjb25vbXl8ZW58MHx8fHwxNzA1OTA3ODQ4fDA&ixlib=rb-4.0.3&q=80&w=320" alt="Economy" loading="lazy">
+            </figure> 
+    </a>                            
+    
+
+    <a href="/tag/economy/" class="small-text hover-underline slide-card-heading two-lines">
+        Economy
+    </a>
+
+    <small class="slide-card-small-text">
+            7 Articles
+    </small>
+</div>                                
+<div class="slide-card"> 
+    <a href="/tag/education/" class="slide-card-image-link hover-image-opacity" aria-label="Education"> 
+            <figure class="slide-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1497633762265-9d179a990aa6?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1497633762265-9d179a990aa6?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=320 320w" src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGVkdWNhdGlvbnxlbnwwfHx8fDE3MDU5MDc5NDN8MA&ixlib=rb-4.0.3&q=80&w=320" alt="Education" loading="lazy">
+            </figure> 
+    </a>                            
+    
+
+    <a href="/tag/education/" class="small-text hover-underline slide-card-heading two-lines">
+        Education
+    </a>
+
+    <small class="slide-card-small-text">
+            10 Articles
+    </small>
+</div>                                
+<div class="slide-card"> 
+    <a href="/tag/finance/" class="slide-card-image-link hover-image-opacity" aria-label="Finance"> 
+            <figure class="slide-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=320 320w" src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNzA1OTA3NjEwfDA&ixlib=rb-4.0.3&q=80&w=320" alt="Finance" loading="lazy">
+            </figure> 
+    </a>                            
+    
+
+    <a href="/tag/finance/" class="small-text hover-underline slide-card-heading two-lines">
+        Finance
+    </a>
+
+    <small class="slide-card-small-text">
+            9 Articles
+    </small>
+</div>                                
+<div class="slide-card"> 
+    <a href="/tag/media/" class="slide-card-image-link hover-image-opacity" aria-label="Media"> 
+            <figure class="slide-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fE1lZGlhfGVufDB8fHx8MTcwNTkwNzk5OHww&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fE1lZGlhfGVufDB8fHx8MTcwNTkwNzk5OHww&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fE1lZGlhfGVufDB8fHx8MTcwNTkwNzk5OHww&ixlib=rb-4.0.3&q=80&w=320 320w" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fE1lZGlhfGVufDB8fHx8MTcwNTkwNzk5OHww&ixlib=rb-4.0.3&q=80&w=320" alt="Media" loading="lazy">
+            </figure> 
+    </a>                            
+    
+
+    <a href="/tag/media/" class="small-text hover-underline slide-card-heading two-lines">
+        Media
+    </a>
+
+    <small class="slide-card-small-text">
+            8 Articles
+    </small>
+</div>                                
+<div class="slide-card"> 
+    <a href="/tag/politics/" class="slide-card-image-link hover-image-opacity" aria-label="Politics"> 
+            <figure class="slide-card-image-wrapper">
+                <img srcset="https://images.unsplash.com/photo-1607778417094-1fef13315e6e?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=100 100w, https://images.unsplash.com/photo-1607778417094-1fef13315e6e?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=150 150w, https://images.unsplash.com/photo-1607778417094-1fef13315e6e?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=320 320w" src="https://images.unsplash.com/photo-1607778417094-1fef13315e6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fHBvbGl0aWNzfGVufDB8fHx8MTcwNTkwNzUxOHww&ixlib=rb-4.0.3&q=80&w=320" alt="Politics" loading="lazy">
+            </figure> 
+    </a>                            
+    
+
+    <a href="/tag/politics/" class="small-text hover-underline slide-card-heading two-lines">
+        Politics
+    </a>
+
+    <small class="slide-card-small-text">
+            10 Articles
+    </small>
+</div>                        </div>
+                    </div>
+                </div>          
+            </section>
+</main>
+                    <link rel="stylesheet" type="text/css" href="css/newsletter.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+<footer class="footer">
+    <custom-footer>
+        <div class="wide-container footer-inner">
+            <div class="footer-content">
+                <div class="footer-description">
+                    <a class="footer-logo" href="https://newspaper.kusa-projects.com">
+                            <div class="footer-logo-text">
+                                Newspaper
+                            </div>                       
+                    </a>
+
+                    <div class="footer-paragraph-wrapper">
+                        <p>Newspaper is a Ghost theme merging old-school newspaper charm with sleek modern design. Ideal for news sites, it embodies traditional journalism with a contemporary, engaging user experience.</p>
+                    </div>
+
+                                <form data-members-form="subscribe" class="subscribe-form footer-form">
+                                    <div class="subscribe-with-alerts">
+                                        <div class="subscribe-wrapper">
+                                            <input data-members-email="" type="email" required="true" placeholder="Your.email@example.com" class="subscribe-input">
+                                            <button class="submit-button" type="submit" aria-label="Subscribe">
+                                                Subscribe
+                                            </button>
+                                        </div>
+
+                                        <div class="form-alerts">
+                                            <small class="form-alert loading-alert">Processing your request...</small>
+                                            <small class="form-alert success-alert">Please check your inbox and click the link to confirm your subscription.</small>
+                                            <small class="form-alert error-alert" data-members-error=""></small>
+                                        </div> 
+                                    </div>            
+                                </form>
+
+                    <div class="socials footer-socials">
+                                <a href="https://www.facebook.com/ghost" target="_blank" class="social" aria-label="Facebook">
+                                    <div class="social-inner">
+                                        <svg width="100%" height="100%" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 9.52381C19 4.26667 14.744 0 9.5 0C4.256 0 0 4.26667 0 9.52381C0 14.1333 3.268 17.9714 7.6 18.8571V12.381H5.7V9.52381H7.6V7.14286C7.6 5.30476 9.0915 3.80952 10.925 3.80952H13.3V6.66667H11.4C10.8775 6.66667 10.45 7.09524 10.45 7.61905V9.52381H13.3V12.381H10.45V19C15.2475 18.5238 19 14.4667 19 9.52381Z" fill="var(--text-color)"></path>
+</svg>
+                                    </div>
+                                </a>
+
+                                <a href="https://x.com/ghost" target="_blank" class="social" aria-label="Twitter">
+                                    <div class="social-inner">
+                                        <svg width="100%" height="100%" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.985 0H0L7.0623 9.41783L0.38475 17.1H2.6505L8.11224 10.8166L12.825 17.1H18.81L11.4502 7.28631L17.784 0H15.5182L10.4002 5.88753L5.985 0ZM13.68 15.39L3.42 1.71H5.13L15.39 15.39H13.68Z" fill="var(--text-color)"></path>
+</svg>
+
+                                    </div>
+                                </a>
+
+                            <a href="#" id="instagram-footer" target="_blank" class="social" aria-label="Instagram">
+                                <div class="social-inner social-inner-smaller">
+                                    <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.92521 0.0011073C10.5819 -0.00141277 11.2387 0.00518759 11.8952 0.0209064L12.0698 0.027206C12.2714 0.0344056 12.4703 0.0434051 12.7106 0.0542046C13.6681 0.0992023 14.3215 0.250395 14.8948 0.472683C15.4887 0.701272 15.9891 1.01086 16.4895 1.51123C16.947 1.96085 17.3011 2.50473 17.5271 3.10505C17.7494 3.67832 17.9006 4.33258 17.9456 5.29014C17.9564 5.52952 17.9654 5.72931 17.9726 5.9309L17.978 6.10549C17.994 6.76173 18.0009 7.41816 17.9987 8.07459L17.9996 8.74596V9.9249C18.0018 10.5816 17.9949 11.2384 17.9789 11.8949L17.9735 12.0695C17.9663 12.2711 17.9573 12.47 17.9465 12.7103C17.9015 13.6678 17.7485 14.3212 17.5271 14.8944C17.3018 15.4954 16.9476 16.0397 16.4895 16.4892C16.0395 16.9466 15.4953 17.3007 14.8948 17.5268C14.3215 17.7491 13.6681 17.9003 12.7106 17.9453C12.4703 17.9561 12.2714 17.9651 12.0698 17.9723L11.8952 17.9777C11.2387 17.9937 10.5819 18.0006 9.92521 17.9984L9.25384 17.9993H8.0758C7.41907 18.0015 6.76235 17.9946 6.10581 17.9786L5.93122 17.9732C5.71758 17.9654 5.50398 17.9564 5.29045 17.9462C4.3329 17.9012 3.67953 17.7482 3.10536 17.5268C2.50481 17.3012 1.96083 16.9471 1.51154 16.4892C1.05351 16.0394 0.699085 15.4952 0.472995 14.8944C0.250706 14.3212 0.0995141 13.6678 0.0545165 12.7103C0.0444936 12.4967 0.035494 12.2831 0.0275179 12.0695L0.0230182 11.8949C0.00642628 11.2384 -0.00107414 10.5816 0.000519274 9.9249V8.07459C-0.00199247 7.41817 0.0046079 6.76174 0.0203183 6.10549L0.026618 5.9309C0.0338176 5.72931 0.0428171 5.52952 0.0536166 5.29014C0.0986143 4.33169 0.249806 3.67922 0.472095 3.10505C0.698319 2.50444 1.05343 1.96071 1.51244 1.51213C1.96142 1.05383 2.50506 0.699087 3.10536 0.472683C3.67953 0.250395 4.332 0.0992023 5.29045 0.0542046L5.93122 0.027206L6.10581 0.0227063C6.76204 0.00612273 7.41847 -0.00137769 8.07491 0.00020741L9.92521 0.0011073ZM9.00006 4.50088C8.40384 4.49244 7.8119 4.60259 7.25863 4.82492C6.70535 5.04725 6.20178 5.37732 5.77718 5.79596C5.35258 6.2146 5.01542 6.71345 4.78529 7.26352C4.55516 7.8136 4.43665 8.40392 4.43665 9.0002C4.43665 9.59647 4.55516 10.1868 4.78529 10.7369C5.01542 11.2869 5.35258 11.7858 5.77718 12.2044C6.20178 12.6231 6.70535 12.9531 7.25863 13.1755C7.8119 13.3978 8.40384 13.5079 9.00006 13.4995C10.1935 13.4995 11.338 13.0254 12.1819 12.1816C13.0257 11.3377 13.4998 10.1932 13.4998 8.99975C13.4998 7.80633 13.0257 6.6618 12.1819 5.81793C11.338 4.97406 10.1935 4.50088 9.00006 4.50088ZM9.00006 6.30078C9.3587 6.29418 9.71506 6.3591 10.0483 6.49176C10.3816 6.62442 10.6851 6.82217 10.9411 7.07343C11.197 7.3247 11.4004 7.62447 11.5392 7.95521C11.6781 8.28595 11.7496 8.64104 11.7497 8.99974C11.7497 9.35844 11.6783 9.71355 11.5396 10.0443C11.4009 10.3751 11.1976 10.675 10.9417 10.9263C10.6858 11.1777 10.3824 11.3755 10.0492 11.5083C9.71594 11.6411 9.3596 11.7061 9.00096 11.6996C8.28491 11.6996 7.59819 11.4152 7.09187 10.9088C6.58555 10.4025 6.3011 9.71579 6.3011 8.99975C6.3011 8.2837 6.58555 7.59698 7.09187 7.09065C7.59819 6.58433 8.28491 6.29988 9.00096 6.29988L9.00006 6.30078ZM13.7248 3.15095C13.4345 3.16257 13.1599 3.28607 12.9586 3.4956C12.7573 3.70513 12.6449 3.98442 12.6449 4.27499C12.6449 4.56555 12.7573 4.84485 12.9586 5.05437C13.1599 5.2639 13.4345 5.38741 13.7248 5.39903C14.0232 5.39903 14.3093 5.28051 14.5203 5.06954C14.7312 4.85857 14.8498 4.57244 14.8498 4.27409C14.8498 3.97573 14.7312 3.6896 14.5203 3.47863C14.3093 3.26767 14.0232 3.14915 13.7248 3.14915V3.15095Z" fill="var(--text-color)"></path>
+</svg>
+                                </div>
+                            </a>
+
+                            <a href="#" id="linkedin-footer" target="_blank" class="social" aria-label="Linkedin">
+                                <div class="social-inner social-inner-smaller">
+                                    <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 0C16.5304 0 17.0391 0.210714 17.4142 0.585786C17.7893 0.960859 18 1.46957 18 2V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H16ZM15.5 15.5V10.2C15.5 9.33539 15.1565 8.5062 14.5452 7.89483C13.9338 7.28346 13.1046 6.94 12.24 6.94C11.39 6.94 10.4 7.46 9.92 8.24V7.13H7.13V15.5H9.92V10.57C9.92 9.8 10.54 9.17 11.31 9.17C11.6813 9.17 12.0374 9.3175 12.2999 9.58005C12.5625 9.8426 12.71 10.1987 12.71 10.57V15.5H15.5ZM3.88 5.56C4.32556 5.56 4.75288 5.383 5.06794 5.06794C5.383 4.75288 5.56 4.32556 5.56 3.88C5.56 2.95 4.81 2.19 3.88 2.19C3.43178 2.19 3.00193 2.36805 2.68499 2.68499C2.36805 3.00193 2.19 3.43178 2.19 3.88C2.19 4.81 2.95 5.56 3.88 5.56ZM5.27 15.5V7.13H2.5V15.5H5.27Z" fill="var(--text-color)"></path>
+</svg>
+                                </div>
+                            </a>
+
+                            <a href="#" id="pinterest-footer" target="_blank" class="social" aria-label="Pinterest">
+                                <div class="social-inner">
+                                    <svg width="100%" height="100%" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.688 18.563C7.6 18.8385 8.5215 19 9.5 19C12.0196 19 14.4359 17.9991 16.2175 16.2175C17.9991 14.4359 19 12.0196 19 9.5C19 8.25244 18.7543 7.0171 18.2769 5.86451C17.7994 4.71191 17.0997 3.66464 16.2175 2.78249C15.3354 1.90033 14.2881 1.20056 13.1355 0.723144C11.9829 0.245725 10.7476 0 9.5 0C8.25244 0 7.0171 0.245725 5.86451 0.723144C4.71191 1.20056 3.66464 1.90033 2.78249 2.78249C1.00089 4.56408 0 6.98044 0 9.5C0 13.5375 2.5365 17.005 6.118 18.373C6.0325 17.632 5.947 16.4065 6.118 15.561L7.2105 10.868C7.2105 10.868 6.935 10.317 6.935 9.443C6.935 8.132 7.752 7.1535 8.683 7.1535C9.5 7.1535 9.88 7.752 9.88 8.5215C9.88 9.3385 9.3385 10.507 9.063 11.628C8.9015 12.559 9.557 13.376 10.507 13.376C12.198 13.376 13.509 11.571 13.509 9.025C13.509 6.745 11.875 5.187 9.5285 5.187C6.8495 5.187 5.2725 7.182 5.2725 9.2815C5.2725 10.0985 5.5385 10.925 5.9755 11.4665C6.061 11.5235 6.061 11.5995 6.0325 11.742L5.757 12.7775C5.757 12.939 5.6525 12.996 5.491 12.882C4.275 12.35 3.572 10.621 3.572 9.2245C3.572 6.2225 5.7 3.496 9.804 3.496C13.072 3.496 15.618 5.8425 15.618 8.9585C15.618 12.2265 13.5945 14.8485 10.697 14.8485C9.7755 14.8485 8.873 14.3545 8.55 13.775L7.9135 16.0265C7.695 16.8435 7.0965 17.936 6.688 18.5915V18.563Z" fill="var(--text-color)"></path>
+</svg>
+                                </div>
+                            </a>     
+                    </div>
+                </div>
+
+                <nav class="footer-navigation">
+                    <ul class="footer-normal-links-group footer-links-group">
+                        <li class="footer-nav-navigation">
+                            <div class="footer-links-label">
+                                Navigation
+                            </div>
+                            <ul class="footer-secondary-links footer-normal-links">
+
+                            </ul>
+                        </li>
+                    </ul>
+                        <ul class="footer-nav">
+            <li class="footer-nav-about nav-current" data-label="-About">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-About</a>
+            </li>
+            <li class="footer-nav-about-archive" data-label="-About--Archive">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/archive/">-About--Archive</a>
+            </li>
+            <li class="footer-nav-about-tags" data-label="-About--Tags">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/tags/">-About--Tags</a>
+            </li>
+            <li class="footer-nav-about-authors" data-label="-About--Authors">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/authors/">-About--Authors</a>
+            </li>
+            <li class="footer-nav-about-membership" data-label="-About--Membership">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/membership/">-About--Membership</a>
+            </li>
+            <li class="footer-nav-about-contact" data-label="-About--Contact">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/contact/">-About--Contact</a>
+            </li>
+            <li class="footer-nav-about-faq" data-label="-About--FAQ">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/faq/">-About--FAQ</a>
+            </li>
+            <li class="footer-nav-features nav-current" data-label="-Features">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Features</a>
+            </li>
+            <li class="footer-nav-features-home nav-current" data-label="-Features--Home">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Features--Home</a>
+            </li>
+            <li class="footer-nav-features-features" data-label="-Features--Features">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/features/">-Features--Features</a>
+            </li>
+            <li class="footer-nav-features-style-guide" data-label="-Features--Style Guide">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/style-guide/">-Features--Style Guide</a>
+            </li>
+            <li class="footer-nav-features-documentation" data-label="-Features--Documentation">  
+                <a class="footer-nav-link hover-underline" href="https://www.kusa-projects.com/newspaper-documentation">-Features--Documentation</a>
+            </li>
+            <li class="footer-nav-features-changelog" data-label="-Features--Changelog">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/changelog/">-Features--Changelog</a>
+            </li>
+            <li class="footer-nav-features-404" data-label="-Features--404">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/404/">-Features--404</a>
+            </li>
+            <li class="footer-nav-account nav-current" data-label="-Account">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/">-Account</a>
+            </li>
+            <li class="footer-nav-account-account" data-label="-Account--Account">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/demo-account/">-Account--Account</a>
+            </li>
+            <li class="footer-nav-account-sign-in" data-label="-Account--Sign In">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/signin/">-Account--Sign In</a>
+            </li>
+            <li class="footer-nav-account-sign-up" data-label="-Account--Sign Up">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/signup/">-Account--Sign Up</a>
+            </li>
+            <li class="footer-nav-account-subscribe" data-label="-Account--Subscribe">  
+                <a class="footer-nav-link hover-underline" href="https://newspaper.kusa-projects.com/subscribe/">-Account--Subscribe</a>
+            </li>
+            <li class="footer-nav-account-get-theme" data-label="-Account--Get theme">  
+                <a class="footer-nav-link hover-underline" href="https://kusa-projects.lemonsqueezy.com/checkout/buy/861bc5c0-91fb-45c3-892e-82f61aaa3e89">-Account--Get theme</a>
+            </li>
+            <li class="footer-nav-account-kusa-projects" data-label="-Account--KUSA Projects">  
+                <a class="footer-nav-link hover-underline" href="https://www.kusa-projects.com/">-Account--KUSA Projects</a>
+            </li>
+    </ul>
+
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                ��2025�<a class="hover-underline" href="https://newspaper.kusa-projects.com">Newspaper</a>�-�Published with�<a href="https://ghost.org/" target="_blank" class="hover-underline">Ghost</a><span>�&�</span><a class="hover-underline" href="https://www.kusa-projects.com/" target="_blank">Newspaper</a>
+            </div>
+        </div>
+    </custom-footer>
+</footer>                </div>
+            </div>
+        </div> 
+
+        <custom-notifications class="global-notifications">
+    <div class="notification subscribe-false">
+        <svg class="notification-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.9987 0.833496C4.9387 0.833496 0.832031 4.94016 0.832031 10.0002C0.832031 15.0602 4.9387 19.1668 9.9987 19.1668C15.0587 19.1668 19.1654 15.0602 19.1654 10.0002C19.1654 4.94016 15.0587 0.833496 9.9987 0.833496ZM10.9154 14.5835H9.08203V12.7502H10.9154V14.5835ZM10.9154 10.9168H9.08203V5.41683H10.9154V10.9168Z" fill="var(--error-color)"></path>
+</svg>        <small>Your link has expired. Please request a new one.</small>
+    </div>
+    <div class="notification signup-false">
+        <svg class="notification-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.9987 0.833496C4.9387 0.833496 0.832031 4.94016 0.832031 10.0002C0.832031 15.0602 4.9387 19.1668 9.9987 19.1668C15.0587 19.1668 19.1654 15.0602 19.1654 10.0002C19.1654 4.94016 15.0587 0.833496 9.9987 0.833496ZM10.9154 14.5835H9.08203V12.7502H10.9154V14.5835ZM10.9154 10.9168H9.08203V5.41683H10.9154V10.9168Z" fill="var(--error-color)"></path>
+</svg>        <small>Your link has expired. Please request a new one.</small>
+    </div>
+    <div class="notification signin-false">
+        <svg class="notification-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.9987 0.833496C4.9387 0.833496 0.832031 4.94016 0.832031 10.0002C0.832031 15.0602 4.9387 19.1668 9.9987 19.1668C15.0587 19.1668 19.1654 15.0602 19.1654 10.0002C19.1654 4.94016 15.0587 0.833496 9.9987 0.833496ZM10.9154 14.5835H9.08203V12.7502H10.9154V14.5835ZM10.9154 10.9168H9.08203V5.41683H10.9154V10.9168Z" fill="var(--error-color)"></path>
+</svg>        <small>Your link has expired. Please request a new one.</small>
+    </div>
+    <div class="notification subscribe-true">
+        <svg class="notification-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 0.375C12.5527 0.375 15.0009 1.38906 16.8059 3.1941C18.6109 4.99913 19.625 7.44729 19.625 10C19.625 12.5527 18.6109 15.0009 16.8059 16.8059C15.0009 18.6109 12.5527 19.625 10 19.625C7.44729 19.625 4.99913 18.6109 3.1941 16.8059C1.38906 15.0009 0.375 12.5527 0.375 10C0.375 7.44729 1.38906 4.99913 3.1941 3.1941C4.99913 1.38906 7.44729 0.375 10 0.375ZM8.801 11.8989L6.66288 9.75937C6.58622 9.68272 6.49523 9.62192 6.39508 9.58044C6.29493 9.53895 6.18759 9.5176 6.07919 9.5176C5.97079 9.5176 5.86345 9.53895 5.7633 9.58044C5.66315 9.62192 5.57215 9.68272 5.4955 9.75937C5.3407 9.91418 5.25373 10.1241 5.25373 10.3431C5.25373 10.562 5.3407 10.7719 5.4955 10.9268L8.218 13.6493C8.29444 13.7263 8.38536 13.7874 8.48554 13.8292C8.58572 13.8709 8.69317 13.8924 8.80169 13.8924C8.91021 13.8924 9.01765 13.8709 9.11783 13.8292C9.21801 13.7874 9.30894 13.7263 9.38538 13.6493L15.0229 8.01038C15.1005 7.93404 15.1623 7.84309 15.2047 7.74275C15.247 7.64242 15.2691 7.53469 15.2696 7.42579C15.2701 7.31689 15.2491 7.20896 15.2076 7.10824C15.1662 7.00751 15.1053 6.91599 15.0283 6.83893C14.9514 6.76188 14.8599 6.70083 14.7592 6.6593C14.6586 6.61777 14.5507 6.59658 14.4418 6.59696C14.3328 6.59734 14.2251 6.61927 14.1247 6.6615C14.0243 6.70373 13.9333 6.76542 13.8569 6.843L8.801 11.8989Z" fill="var(--success-color)"></path>
+</svg>        <small>Great! You've successfully signed up.</small>
+    </div>
+    <div class="notification signup-true">
+        <svg class="notification-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 0.375C12.5527 0.375 15.0009 1.38906 16.8059 3.1941C18.6109 4.99913 19.625 7.44729 19.625 10C19.625 12.5527 18.6109 15.0009 16.8059 16.8059C15.0009 18.6109 12.5527 19.625 10 19.625C7.44729 19.625 4.99913 18.6109 3.1941 16.8059C1.38906 15.0009 0.375 12.5527 0.375 10C0.375 7.44729 1.38906 4.99913 3.1941 3.1941C4.99913 1.38906 7.44729 0.375 10 0.375ZM8.801 11.8989L6.66288 9.75937C6.58622 9.68272 6.49523 9.62192 6.39508 9.58044C6.29493 9.53895 6.18759 9.5176 6.07919 9.5176C5.97079 9.5176 5.86345 9.53895 5.7633 9.58044C5.66315 9.62192 5.57215 9.68272 5.4955 9.75937C5.3407 9.91418 5.25373 10.1241 5.25373 10.3431C5.25373 10.562 5.3407 10.7719 5.4955 10.9268L8.218 13.6493C8.29444 13.7263 8.38536 13.7874 8.48554 13.8292C8.58572 13.8709 8.69317 13.8924 8.80169 13.8924C8.91021 13.8924 9.01765 13.8709 9.11783 13.8292C9.21801 13.7874 9.30894 13.7263 9.38538 13.6493L15.0229 8.01038C15.1005 7.93404 15.1623 7.84309 15.2047 7.74275C15.247 7.64242 15.2691 7.53469 15.2696 7.42579C15.2701 7.31689 15.2491 7.20896 15.2076 7.10824C15.1662 7.00751 15.1053 6.91599 15.0283 6.83893C14.9514 6.76188 14.8599 6.70083 14.7592 6.6593C14.6586 6.61777 14.5507 6.59658 14.4418 6.59696C14.3328 6.59734 14.2251 6.61927 14.1247 6.6615C14.0243 6.70373 13.9333 6.76542 13.8569 6.843L8.801 11.8989Z" fill="var(--success-color)"></path>
+</svg>        <small>Great! You've successfully signed up.</small>
+    </div>
+    <div class="notification signin-true">
+        <svg class="notification-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 0.375C12.5527 0.375 15.0009 1.38906 16.8059 3.1941C18.6109 4.99913 19.625 7.44729 19.625 10C19.625 12.5527 18.6109 15.0009 16.8059 16.8059C15.0009 18.6109 12.5527 19.625 10 19.625C7.44729 19.625 4.99913 18.6109 3.1941 16.8059C1.38906 15.0009 0.375 12.5527 0.375 10C0.375 7.44729 1.38906 4.99913 3.1941 3.1941C4.99913 1.38906 7.44729 0.375 10 0.375ZM8.801 11.8989L6.66288 9.75937C6.58622 9.68272 6.49523 9.62192 6.39508 9.58044C6.29493 9.53895 6.18759 9.5176 6.07919 9.5176C5.97079 9.5176 5.86345 9.53895 5.7633 9.58044C5.66315 9.62192 5.57215 9.68272 5.4955 9.75937C5.3407 9.91418 5.25373 10.1241 5.25373 10.3431C5.25373 10.562 5.3407 10.7719 5.4955 10.9268L8.218 13.6493C8.29444 13.7263 8.38536 13.7874 8.48554 13.8292C8.58572 13.8709 8.69317 13.8924 8.80169 13.8924C8.91021 13.8924 9.01765 13.8709 9.11783 13.8292C9.21801 13.7874 9.30894 13.7263 9.38538 13.6493L15.0229 8.01038C15.1005 7.93404 15.1623 7.84309 15.2047 7.74275C15.247 7.64242 15.2691 7.53469 15.2696 7.42579C15.2701 7.31689 15.2491 7.20896 15.2076 7.10824C15.1662 7.00751 15.1053 6.91599 15.0283 6.83893C14.9514 6.76188 14.8599 6.70083 14.7592 6.6593C14.6586 6.61777 14.5507 6.59658 14.4418 6.59696C14.3328 6.59734 14.2251 6.61927 14.1247 6.6615C14.0243 6.70373 13.9333 6.76542 13.8569 6.843L8.801 11.8989Z" fill="var(--success-color)"></path>
+</svg>        <small>Welcome back! You've successfully signed in.</small>
+    </div>
+    <div class="notification stripe-success">
+        <svg class="notification-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 0.375C12.5527 0.375 15.0009 1.38906 16.8059 3.1941C18.6109 4.99913 19.625 7.44729 19.625 10C19.625 12.5527 18.6109 15.0009 16.8059 16.8059C15.0009 18.6109 12.5527 19.625 10 19.625C7.44729 19.625 4.99913 18.6109 3.1941 16.8059C1.38906 15.0009 0.375 12.5527 0.375 10C0.375 7.44729 1.38906 4.99913 3.1941 3.1941C4.99913 1.38906 7.44729 0.375 10 0.375ZM8.801 11.8989L6.66288 9.75937C6.58622 9.68272 6.49523 9.62192 6.39508 9.58044C6.29493 9.53895 6.18759 9.5176 6.07919 9.5176C5.97079 9.5176 5.86345 9.53895 5.7633 9.58044C5.66315 9.62192 5.57215 9.68272 5.4955 9.75937C5.3407 9.91418 5.25373 10.1241 5.25373 10.3431C5.25373 10.562 5.3407 10.7719 5.4955 10.9268L8.218 13.6493C8.29444 13.7263 8.38536 13.7874 8.48554 13.8292C8.58572 13.8709 8.69317 13.8924 8.80169 13.8924C8.91021 13.8924 9.01765 13.8709 9.11783 13.8292C9.21801 13.7874 9.30894 13.7263 9.38538 13.6493L15.0229 8.01038C15.1005 7.93404 15.1623 7.84309 15.2047 7.74275C15.247 7.64242 15.2691 7.53469 15.2696 7.42579C15.2701 7.31689 15.2491 7.20896 15.2076 7.10824C15.1662 7.00751 15.1053 6.91599 15.0283 6.83893C14.9514 6.76188 14.8599 6.70083 14.7592 6.6593C14.6586 6.61777 14.5507 6.59658 14.4418 6.59696C14.3328 6.59734 14.2251 6.61927 14.1247 6.6615C14.0243 6.70373 13.9333 6.76542 13.8569 6.843L8.801 11.8989Z" fill="var(--success-color)"></path>
+</svg>        <small>Success! You now have access to additional content.</small>
+    </div>
+</custom-notifications>
+
+            <link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<settings-sidebar class="settings-sidebar">
+    <div class="settings-inner">
+        <div class="settings-item">
+            <label for="theme-presets" class="settings-label">
+                <small>Theme presets</small>
+            </label>
+            <select class="settings-select" name="theme-presets" id="theme-presets">
+                <option value="old-newspaper-light">Old Newspaper Light</option>
+                <option value="modern-newspaper-light" selected="">Modern Newspaper Light</option>
+                <option value="old-newspaper-tinted">Old Newspaper Tinted</option>
+                <option value="elegant-newspaper-light">Elegant Newspaper Light</option>
+                <option value="elegant-newspaper-dark">Elegant Newspaper Dark</option>
+                <option value="old-newspaper-dark">Old Newspaper Dark</option>
+                <option value="modern-newspaper-dark">Modern Newspaper Dark</option>                
+            </select>
+       </div>
+
+        <div class="settings-item">
+            <label for="background-color" class="settings-label">
+                <small>Background color</small>
+            </label>
+            <div class="color-picker-wrapper">
+                <div class="colorpicker-overlay"></div>
+                <input type="color" id="background-color" name="background-color" value="#FFFFFF" colorpick-eyedropper-active="false">
+            </div>
+        </div>
+
+        <div class="settings-item">
+            <label for="text-color" class="settings-label">
+                <small>Text color</small>
+            </label>
+            <div class="color-picker-wrapper">
+                <div class="colorpicker-overlay colorpicker-overlay-text"></div>
+                <input type="color" id="text-color" name="text-color" value="#000000" colorpick-eyedropper-active="false">
+            </div>
+        </div>
+
+        <div class="settings-item">
+            <label for="fonts" class="settings-label">
+                <small>Fonts</small>
+            </label>
+            <input id="fonts" name="fonts" type="text" value="Open Sans, EB Garamond, Roboto Condensed" class="settings-input">
+        </div>
+
+        <div class="settings-item">
+            <label for="announcement-bar-type" class="settings-label">
+                <small>Announcement bar type</small>
+            </label>
+            <select class="settings-select" name="announcement-bar-type" id="announcement-bar-type">
+                 <option value="Normal">Normal</option>
+                 <option value="Moving Several News" selected="">Moving Several News</option>
+                 <option value="Moving One News">Moving One News</option>             
+                 <option value="Static">Static</option>
+            </select>
+       </div>
+
+       <div class="settings-item">
+            <label for="card-heading-style" class="settings-label">
+                <small>Card heading style</small>
+            </label>
+            <select class="settings-select" name="card-heading-style" id="card-heading-style">
+                 <option value="uppercase">uppercase</option>
+                 <option value="capitalize">capitalize</option>
+                 <option value="lowercase">lowercase</option>
+                 <option value="none">none</option>
+            </select>
+       </div>
+
+       <div class="settings-item">
+            <label for="image-style" class="settings-label">
+                <small>Image style</small>
+            </label>
+            <select class="settings-select" name="image-style" id="image-style">
+                <option value="unset">Normal</option>
+                 <option value="grayscale(1)">Grayscale</option>
+                 <option value="grayscale(1) sepia(0.35) contrast(0.85)">Tinted</option>
+            </select>
+       </div>
+
+       <div class="settings-item">
+            <label for="use-initials" class="settings-label">
+                <small>Use initials</small>
+            </label>
+            <select class="settings-select" name="use-initials" id="use-initials">
+                 <option value="true">True</option>
+                 <option value="false" selected="">False</option>
+            </select>
+       </div>
+
+       <div class="settings-item">
+            <label for="use-newsletter" class="settings-label">
+                <small>Newsletter on homepage and post sidebar</small>
+            </label>
+            <select class="settings-select" name="use-newsletter" id="use-newsletter">
+                 <option value="true">True</option>
+                 <option value="false">False</option>
+            </select>
+       </div>
+
+       <div class="settings-item">
+            <label for="tag-page-layout" class="settings-label">
+                <small>Tag page layout</small>
+            </label>
+            <div class="settings-links" name="tag-page-layout" id="tag-page-layout">
+                 <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/tag/politics">Column</a>
+                 </small>
+                 <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/tag/politics?tag-layout=simple">Simple</a>
+                 </small>
+            </div>
+       </div>
+
+       <div class="settings-item">
+            <label for="author-page-layout" class="settings-label">
+                <small>Author page layout</small>
+            </label>
+            <div class="settings-links" name="author-page-layout" id="author-page-layout">
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/author/john-doe">Column</a>
+                 </small>
+                 <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/author/john-doe?author-layout=author-image-left">Author Image Left</a>
+                 </small>
+                 <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/author/john-doe?author-layout=author-image-right">Author Image Right</a>
+                 </small>
+                 <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/author/katarina-smith-demo">Simple</a>
+                 </small>
+            </div>
+       </div>
+
+       <div class="settings-item">
+            <label for="account-page-layout" class="settings-label">
+                <small>Account page layout</small>
+            </label>
+            <div class="settings-links" name="account-page-layout" id="account-page-layout">
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/demo-account">All Data Layout</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/demo-account?no-subscribe-button=true">All Data Layout No Btn</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/demo-account?account-layout=simple">Simple Layout</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/demo-account?account-layout=simple&no-subscribe-button=true">Simple Layout No Btn</a>
+                </small>
+            </div>
+       </div>
+
+       <div class="settings-item">
+            <label for="post-header-type" class="settings-label">
+                <small>Post header type</small>
+            </label>
+            <div class="settings-links" name="post-header-type" id="post-header-type">               
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=narrow&sidebar=false">Narrow</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=wide&sidebar=false">Wide</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=featured-image-left&sidebar=false">Featured Image Left</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=featured-image-right&sidebar=false">Featured Image Right</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=narrow&sidebar=true">Narrow With Sidebar</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=wide&sidebar=true">Wide With Sidebar</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=featured-image-left&sidebar=true">Featured Image Left With Sidebar</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/foreign-relations-diplomatic-talks-with-neighboring-countries?post-layout=featured-image-right&sidebar=true">Featured Image Right With Sidebar</a>
+                </small>
+                <small>
+                    <a class="settings-link" href="https://newspaper.kusa-projects.com/innovation-in-the-corporate-world-unveiling-the-latest-business-trends?post-layout=narrow&sidebar=false">Members Only Post</a>
+                </small>
+            </div>
+       </div>
+
+       <div class="settings-item">
+            <label for="sidebar-content" class="settings-label">
+                <small>Sidebar content</small>
+            </label>
+            <select class="settings-select" name="sidebar-content" id="sidebar-content">
+                 <option value="Featured Articles">Featured Articles</option>
+                 <option value="Table Of Contents">Table Of Contents</option>
+            </select>
+       </div>
+
+       <div class="settings-item">
+            <label for="sidebar-position" class="settings-label">
+                <small>Sidebar position</small>
+            </label>
+            <select class="settings-select" name="sidebar-position" id="sidebar-position">
+                 <option value="Right">Right</option>
+                 <option value="Left">Left</option>
+            </select>
+       </div>
+    
+        <div class="buy-button-wrapper">
+            <a href="https://kusa-projects.lemonsqueezy.com/checkout/buy/861bc5c0-91fb-45c3-892e-82f61aaa3e89" class="button buy-button" target="_blank">Buy Newspaper</a>
+        </div>
+    </div>
+</settings-sidebar>
+
+<div class="demo-buttons-container">
+    <a href="https://kusa-projects.lemonsqueezy.com/checkout/buy/861bc5c0-91fb-45c3-892e-82f61aaa3e89" class="demo-button" aria-label="Buy Newspaper" target="_blank">
+        <div class="demo-button-inner">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.3125 21.5C4.67656 21.5 4.13197 21.2734 3.67872 20.8201C3.22547 20.3669 2.99923 19.8227 3 19.1875V15.7187H5.3125V19.1875H19.1875V15.7187H21.5V19.1875C21.5 19.8234 21.2734 20.368 20.8201 20.8213C20.3669 21.2745 19.8227 21.5008 19.1875 21.5H5.3125ZM12.25 16.875L6.46875 11.0937L8.0875 9.41719L11.0938 12.4234V3H13.4063V12.4234L16.4125 9.41719L18.0313 11.0937L12.25 16.875Z" fill="currentColor"></path>
+</svg>        </div>        
+    </a>
+
+    <button id="settings-button" class="demo-button" aria-label="Newspaper Settings">
+        <div class="demo-button-inner">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.5006 12C19.5006 11.77 19.4906 11.55 19.4706 11.32L21.3306 9.91C21.7306 9.61 21.8406 9.05 21.5906 8.61L19.7206 5.38C19.6007 5.16818 19.4068 5.00814 19.1761 4.93062C18.9454 4.8531 18.6941 4.86356 18.4706 4.96L16.3206 5.87C15.9506 5.61 15.5606 5.38 15.1506 5.19L14.8606 2.88C14.8006 2.38 14.3706 2 13.8706 2H10.1406C9.63064 2 9.20064 2.38 9.14064 2.88L8.85064 5.19C8.44064 5.38 8.05064 5.61 7.68064 5.87L5.53064 4.96C5.07064 4.76 4.53064 4.94 4.28064 5.38L2.41064 8.62C2.16064 9.06 2.27064 9.61 2.67064 9.92L4.53064 11.33C4.48919 11.779 4.48919 12.231 4.53064 12.68L2.67064 14.09C2.27064 14.39 2.16064 14.95 2.41064 15.39L4.28064 18.62C4.53064 19.06 5.07064 19.24 5.53064 19.04L7.68064 18.13C8.05064 18.39 8.44064 18.62 8.85064 18.81L9.14064 21.12C9.20064 21.62 9.63064 22 10.1306 22H13.8606C14.3606 22 14.7906 21.62 14.8506 21.12L15.1406 18.81C15.5506 18.62 15.9406 18.39 16.3106 18.13L18.4606 19.04C18.9206 19.24 19.4606 19.06 19.7106 18.62L21.5806 15.39C21.8306 14.95 21.7206 14.4 21.3206 14.09L19.4606 12.68C19.4906 12.45 19.5006 12.23 19.5006 12ZM12.0406 15.5C10.1106 15.5 8.54064 13.93 8.54064 12C8.54064 10.07 10.1106 8.5 12.0406 8.5C13.9706 8.5 15.5406 10.07 15.5406 12C15.5406 13.93 13.9706 15.5 12.0406 15.5Z" fill="currentColor"></path>
+</svg>
+        </div>        
+    </button>
+</div>
+
+<script src="js/demo.js"></script>
+        
+    
+
+
+</body></html>

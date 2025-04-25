@@ -1,0 +1,135 @@
+.newsletter-outer {
+    width: 100%;
+    border-top: 1px solid var(--text-color);
+    display: none;
+}
+
+.homepage-newsletter .newsletter-outer {
+    display: flex;
+}
+
+.newsletter {
+    width: 100%;
+    margin: 38px 0px;
+    padding: 96px calc(4.3vw * var(--scale));
+    border: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-heading {
+    margin-top: 14px;
+}
+
+.subscribe-form {
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-with-alerts {
+    max-width: 455px;
+    width: 100%;
+}
+
+.subscribe-wrapper {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 13px;
+}
+
+.submit-button {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.form-alert {
+    display: none;
+    font-family: var(--font1);
+}
+
+form.error .error-alert, 
+form.success .success-alert, 
+form.loading .loading-alert {
+    display: block;
+}
+
+.newsletter-small-bottom-text {
+    color: var(--text-color) !important;
+}
+
+form.error .newsletter-small-bottom-text, 
+form.success .newsletter-small-bottom-text, 
+form.loading .newsletter-small-bottom-text {
+    display: none;
+}
+
+.newsletter-outer-for-post {
+    display: none;
+}
+
+.sidebar-newsletter-container .newsletter-outer-for-post {
+    display: flex;
+}
+
+.newsletter-outer-for-post .newsletter {
+    padding: 68px 42px;
+}
+
+/* Styles for large desktop */
+@media (min-width: 1439px) {  
+    .newsletter {
+        margin: calc(2.64vw * var(--scale)) 0px;
+        padding: 6.67vw calc(4.3vw * var(--scale));
+    }
+    
+    .newsletter-heading {
+        margin-top: calc(0.97vw * var(--scale))
+    }
+    
+    .subscribe-form {
+        margin-top: calc(1.53vw * var(--scale));
+    }
+    
+    .subscribe-with-alerts {
+        max-width: calc(31.6vw * var(--scale));
+    }
+    
+    .subscribe-wrapper {
+        margin-bottom: calc(0.9vw * var(--scale));
+    }
+    
+    .submit-button {
+        padding-left: calc(1.18vw * var(--scale));
+        padding-right: calc(1.18vw * var(--scale));
+    }
+
+    .newsletter-outer-for-post .newsletter {
+        padding: calc(4.72vw * var(--scale)) calc(2.92vw * var(--scale));
+    }
+}
+
+/* Styles for tablet */
+@media (max-width: 991px) { 
+    .newsletter {
+        padding: 96px 30px;
+        min-height: 62vw;
+    }
+}
+
+/* Styles for mobile */
+@media (max-width: 479px) { 
+    .newsletter {
+        padding: 68px 30px;
+    }
+
+    .submit-button {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

@@ -1,0 +1,120 @@
+.notification {
+    z-index: 8999;
+    position: fixed;
+    display: none;
+    visibility: hidden;
+    top: 0;
+    left: calc(50%);
+    transform: translateX(-50%);
+    padding: 12px 30px;
+    border: 1px solid var(--text-color);
+    background-color: var(--background-color);
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification small {
+    opacity: 1;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+.notification-icon {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    min-height: 18px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global-notifications.subscribe-false .subscribe-false,
+.global-notifications.signin-false .signin-false,
+.global-notifications.subscribe-true .subscribe-true,
+.global-notifications.signin-true .signin-true,
+.global-notifications.stripe-success .stripe-success,
+.global-notifications.signup-true .signup-true,
+.global-notifications.signup-false .signup-false {
+    display: flex;
+    visibility: visible;
+    animation-name: slide-in-down;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+} 
+
+/* Hide default global notifications */
+.gh-portal-notification-iframe {
+    display: none;
+}
+
+@keyframes slide-in-down {
+    0% {
+      transform: translateY(-100%) translateX(-50%);
+    }
+    15% {
+      transform: translateY(85%) translateX(-50%);
+    }
+    85% {
+      transform: translateY(85%) translateX(-50%);
+    }
+    100% {
+      transform: translateY(-100%) translateX(-50%);
+    }
+}
+
+/* Styles for large desktop */
+@media (min-width: 1439px) { 
+    .notification {
+        padding: calc(0.8vw * var(--scale)) calc(2.1vw * var(--scale));
+    }
+    
+    .notification small {
+        font-size: calc(1.11vw * var(--scale))
+    }
+    
+    .notification-icon {
+        width: calc(1.25vw * var(--scale));
+        min-width: calc(1.25vw * var(--scale));
+        height: calc(1.25vw * var(--scale));
+        min-height: calc(1.25vw * var(--scale));
+        margin-right: calc(0.56vw * var(--scale));
+    }
+}
+
+/* Styles for tablet */
+@media (max-width: 991px) {
+    .notification {
+        max-width: calc(100vw - 60px);
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .notification-icon {
+        margin-top: 2px;
+    }
+}
+
+/* Styles for mobile */
+@media (max-width: 479px) { 
+    .notification {
+        padding: 11px 18px;
+        max-width: calc(100vw - 36px);
+    }
+    
+    .notification small {
+        font-size: 14px;
+    }
+    
+    .notification-icon {
+        width: 16px;
+        min-width: 16px;
+        height: 16px;
+        min-height: 16px;
+    }
+}
